@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import { AppBar, IconButton, Toolbar, Box, Typography, Tooltip, Menu, MenuItem, Modal } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Box, Typography, Tooltip } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from 'react-router-dom';
 import ModalMenuItem from "./ModalMenuItem";
@@ -19,21 +19,20 @@ const Navbar = () => {
 
   return (
     <header>
-      <AppBar elevation={0} sx={{ background: "none", borderStyle: 'dotted' }}>
+      <AppBar elevation={0}  sx={{ background: "none"}}>
         <Toolbar style={{ width: "80%", margin: "0 auto" }}>
           <Link to="/" style={{ textDecoration: "none", flexGrow: 1 }}>
-            <Typography
+            <Typography color='secondary'
               sx={{
                 fontFamily: "Pacifico",
                 fontSize: {xs: '2rem', lg: "2.5rem"},
-                color: "white",
                 textAlign: "left"
               }}
             >
-              Thomas{" "}
-              <span style={{ color: "red", fontFamily: "Pacifico" }}>
-                Melchers
-              </span>{" "}
+              TM{" "}
+              {/* <span style={{color: '#FFC900', fontFamily: "Pacifico" }}>
+                M
+              </span>{" "} */}
             </Typography>
           </Link>
 
@@ -42,11 +41,11 @@ const Navbar = () => {
               <Box key={page} ml={3}>
                 {/* <Link to="" style={{ textDecoration: "none", marginLeft: 2 }}> */}
                   <Typography
+                    color='primary'
                     style={{
                       /* fontFamily: "Fredoka", */
-                      fontSize: "1.7rem",
+                      fontSize: "1.1rem",
                       fontWeight: "650",
-                      color: "white",
                     }}
                   >
                     {page}
@@ -59,7 +58,7 @@ const Navbar = () => {
           <Box sx={{ display: { xs: "flex", lg: "none" } }}>
             <Tooltip title='Open settings'>
               <IconButton onClick={openMenuItem} >
-                <MenuIcon style={{color: 'white', fontSize: '2rem', fontWeight: '500'}} />
+                <MenuIcon color= 'primary' sx={{fontSize: '2rem', fontWeight: '500'}} />
               </IconButton>
             </Tooltip>
 

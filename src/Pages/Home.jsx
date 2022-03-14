@@ -2,11 +2,10 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import Button from "../Components/Button/Button";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
-import { fontWeight } from "@mui/system";
 
 const Home = () => {
   return (
-    <Box style={{ backgroundColor: "green" }}>
+    <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
         style={{ height: "100vh", px: { xs: "2vh", md: "10vh" } }}
@@ -18,15 +17,15 @@ const Home = () => {
           alignItems="flex-start"
           item
           xs={12}
-          style={{ height: "90vh", borderStyle: "dotted" }}
+          style={{ height: "90vh"}}
           pl={"10%"}
         >
-          <Typography sx={{ fontSize: "1.5rem" }}>Hello, my name is</Typography>
-          <Typography sx={{ fontSize: "3rem", fontWeight: 800 }}>
-            Thomas MELCHERS,
+          <Typography color='secondary' sx={{ fontSize: "1.3rem" }}>Hello, my name is</Typography>
+          <Typography color='primary' sx={{ fontSize: "6rem", fontWeight: 800 }}>
+            Thomas MELCHERS.
           </Typography>
-          <Typography sx={{ fontSize: "2rem", fontWeight: 600 }} mb={2}>
-            I am Junior Web Developer
+          <Typography color='primary' sx={{ fontSize: "3rem", fontWeight: 600 }} mb={4}>
+            I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
           </Typography>
           <Button size={'large'} buttonName={'About Me'}/>
         </Grid>

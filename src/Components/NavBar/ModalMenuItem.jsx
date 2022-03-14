@@ -7,10 +7,10 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: '80%',
-    height: '80%',
-    bgcolor: "background.paper",
-    border: "2px solid #000",
+    width: '50%',
+    height: '50%',
+    bgcolor: "#CCD7F5",
+    border: "2px solid #FFC900",
     borderRadius: 8,
     boxShadow: 24,
     p: 4,
@@ -25,7 +25,6 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
     position: 'absolute',
     top: '1%',
     right: '4%',
-    color: 'green'
   }
 
   return (
@@ -34,15 +33,16 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
       onClose={closeMenuItem}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
+      backgroundColor='primary'
     >
       <Box sx={style}>
             <Box>
-              <Typography style={closeStyle} onClick={closeMenuItem}>+</Typography>
+              <Typography color='secondary' style={closeStyle} onClick={closeMenuItem}>+</Typography>
           </Box>
       {pages.map((page) => (
           
-          <Box key={page} style={{height: '20%', borderBottom: 'solid green'}} display='flex' justifyContent='center' alignItems='center'>
-              <Typography  id="modal-modal-title" variant="h6" component="h2" textAlign='center'>
+          <Box key={page} style={{height: '20%', borderBottom: 'solid #FFC900'}} display='flex' justifyContent='center' alignItems='center'>
+              <Typography id="modal-modal-title" variant="h6" component="h2" textAlign='center' sx={{color:'#0A1A2E', fontWeight:'500', fontSize:'1.5rem'}}>
               {page}
               </Typography>
               </Box>

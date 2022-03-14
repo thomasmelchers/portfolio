@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const Btn = ({ buttonName, type, size, color, mt, onClick }) => {
   return (
-    <Button variant="outlined" onClick={onClick} type={type} size={size} >
+    <Button variant="outlined" onClick={onClick} type={type} size={size} color='secondary'>
       {buttonName}
     </Button>
   );

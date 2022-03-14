@@ -7,7 +7,7 @@ import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor: 'green', height: '100vh'}}>
+    <div className="App">
       
       <Router>
       <NavBar />
