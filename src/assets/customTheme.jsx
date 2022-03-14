@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material'
 import { red } from '@mui/material/colors'
 
+
 const primaryColor = '#CCD7F5' // grey
 const secondaryColor = '#FFC900' // yellow
 const thirdColor = '#0A1A2E' // navy for background
@@ -19,6 +20,11 @@ const customTheme = createTheme({
         error: {
             main: dangerColor
         }
+    },
+
+    typography: {
+        fontFamily: 
+            ['Nunito', 'sans-serif'].join(',')
     }
 })
 
