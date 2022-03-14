@@ -8,7 +8,7 @@ const Home = () => {
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
-        style={{ height: "100vh", px: { xs: "2vh", md: "10vh" } }}
+        style={{ height: "100vh" }}
       >
         <Grid
           container
@@ -20,11 +20,11 @@ const Home = () => {
           style={{ height: "90vh"}}
           pl={"10%"}
         >
-          <Typography color='secondary' sx={{ fontSize: "1.3rem" }}>Hello, my name is</Typography>
-          <Typography color='primary' sx={{ fontSize: "6rem", fontWeight: 800 }}>
+          <Typography color='secondary' sx={{ fontSize: {xs:"1.3rem", md:'1.4rem', lg: '1.7rem'} }}>Hello, my name is</Typography>
+          <Typography color='primary' sx={{ fontSize: {xs: "3rem", md:"4.5rem", lg: "6rem"}, fontWeight: 800 }}>
             Thomas MELCHERS.
           </Typography>
-          <Typography color='primary' sx={{ fontSize: "3rem", fontWeight: 600 }} mb={4}>
+          <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
             I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
           </Typography>
           <Button size={'large'} buttonName={'About Me'}/>
