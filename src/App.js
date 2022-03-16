@@ -10,7 +10,7 @@ import Contact from "./Pages/Contact";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <NavBar />
         <Home />
         <AboutMe />
@@ -20,7 +20,7 @@ function App() {
         {/* <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes> */}
-      </Router>
+      {/* </Router> */}
     </div>
   );
 }
