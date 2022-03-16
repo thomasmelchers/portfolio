@@ -39,15 +39,15 @@ const Contact = () => {
       <Grid
         container
         style={{ height: "100vh" }}
-        px="10%" /* direction="column" */
+        px={"10%"} /* direction="column" */
       >
-        <Grid container item mt="6vh" xs={12} sx={{ height: "85vh" }}>
+        <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "70vh",md: "85vh"} }}>
           <Grid container justifyContent="center" alignItems="center">
             <Grid
               item
-              sx={10}
+              sx={12}
               md={8}
-              lg={6}
+              lg={8}
               p={10}
               sx={{
                 borderStyle: "solid",
@@ -61,7 +61,7 @@ const Contact = () => {
                   <Grid item xs={12} md={5}>
 
                     <Grid container justifyContent="space-between">
-                      <Grid item xs={12} md={5.5} mb={4}>
+                      <Grid item xs={12} md={5.5} mb={{xs: 2.5, md: 4}}>
                         <TextField
                           id="firstname"
                           name="firstname"
@@ -73,7 +73,7 @@ const Contact = () => {
                           color="secondary"
                         />
                       </Grid>
-                      <Grid item xs={12} md={5.5} mb={4}>
+                      <Grid item xs={12} md={5.5} mb={{xs: 2.5, md: 4}}>
                         <TextField
                           id="name"
                           name="name"
@@ -87,7 +87,7 @@ const Contact = () => {
                       </Grid>
                     </Grid>
 
-                    <Grid container mb={4}>
+                    <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
                         <TextField
                           id="company"
@@ -102,7 +102,7 @@ const Contact = () => {
                       </Grid>
                     </Grid>
 
-                    <Grid container mb={4}>
+                    <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
                         <TextField
                           id="object"
@@ -117,7 +117,7 @@ const Contact = () => {
                       </Grid>
                     </Grid>
 
-                    <Grid container mb={4}>
+                    <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
                         <TextField
                           id="object"
@@ -134,7 +134,7 @@ const Contact = () => {
                   </Grid>
 
                   <Grid item xs={12} md={5}>
-                    <Grid container mb={4}>
+                    <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12} md={12}>
                         <TextareaAutosize
                           id="message"
@@ -142,12 +142,13 @@ const Contact = () => {
                           label="Message"
                           placeholder="message"
                           variant="standard"
-                          minRows={15}
+                          minRows={12}
                           style={{
                             width: "96%",
                             padding: "2%",
                             borderRadius: 10,
                             bgcolor: "primary.main",
+                            outline: 'none'
                           }}
                           required
                         />
