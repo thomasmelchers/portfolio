@@ -1,38 +1,59 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Box, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import Button from "../Components/Button/Button";
 import emailjs from "@emailjs/browser";
+import Validation from "../Components/ContactForm/Validation";
 
 const Contact = () => {
   const form = useRef();
-  console.log(form);
 
+  const [error, setError] = useState ({})
+  const [isClicked, setIsClicked] = useState(false)
   const [isSended, setIsSended] = useState(false)
+  const [values, setValues] = useState({
+    firstname: '',
+    name: '',
+    company: '',
+    email:'',
+    object: '',
+    message: '',
+  })
+
+  const handleChange = e => {
+    setValues({
+        ...values,
+        // targeting the value for each name field in every form inputs
+        [e.target.name]: e.target.value
+    })
+}
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
+    setError(Validation(values))
+
+    setIsClicked(true) 
+    
+  };
+  
+  useEffect(
+    () => {
+        if (Object.keys(error).length === 0 && isClicked) {
+            emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_EMAILJS_USER_ID
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
       setIsSended(true)
-  };
+          }
+    },
+    [error]
+  );
 
-
-  console.log(isSended)
   return (
     <Box
       component="form"
@@ -46,14 +67,15 @@ const Contact = () => {
         style={{ height: "100vh" }}
         px={"10%"} /* direction="column" */
       >
-        <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "70vh",md: "85vh"} }}>
+        <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "85vh"}, overflow: 'scroll' }}>
           <Grid container justifyContent="center" alignItems="center">
             <Grid
               item
-              sx={12}
+              xs={12}
               md={8}
               lg={8}
-              p={5}
+              p={{xs:2, lg: 5}}
+              px={{xs: 4}}
               sx={{
                 borderStyle: "solid",
                 borderColor: "#FFC900",
@@ -74,6 +96,7 @@ const Contact = () => {
                     {/* FIRSTNAME */}
                   <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12} >
+                        
                         <TextField
                           id="firstname"
                           name="firstname"
@@ -83,8 +106,12 @@ const Contact = () => {
                           fullWidth
                           required
                           color="secondary"
+                          values={values.firstname}
+                          onChange={handleChange}
                         />
-                      </Grid>
+                      </Grid> <Typography color="error" textAlign='left'>
+                            {error.firstname}
+                          </Typography>
                       </Grid>
 
                     {/* NAME */}
@@ -99,7 +126,11 @@ const Contact = () => {
                           fullWidth
                           required
                           color="secondary"
-                        />
+                          values={values.name}
+                          onChange={handleChange}
+                        /><Typography color="error" textAlign='left'>
+                        {error.name}
+                      </Typography>
                       </Grid>
                     </Grid>
 
@@ -115,7 +146,11 @@ const Contact = () => {
                           color="secondary"
                           fullWidth
                           required
-                        />
+                          values={values.company}
+                          onChange={handleChange}
+                        /><Typography color="error" textAlign='left'>
+                        {error.company}
+                      </Typography>
                       </Grid>
                     </Grid>
 
@@ -124,14 +159,18 @@ const Contact = () => {
                       <Grid item xs={12}>
                         <TextField
                           id="object"
-                          name="object"
+                          name="email"
                           label="Your Email"
                           variant="outlined"
                           type="email"
                           color="secondary"
                           fullWidth
                           required
-                        />
+                          values={values.email}
+                          onChange={handleChange}
+                        /> <Typography color="error" textAlign='left'>
+                        {error.email}
+                      </Typography>
                       </Grid>
                     </Grid>
 
@@ -152,7 +191,11 @@ const Contact = () => {
                           color="secondary"
                           fullWidth
                           required
-                        />
+                          values={values.object}
+                          onChange={handleChange}
+                        /><Typography color="error" textAlign='left'>
+                        {error.object}
+                      </Typography>
                       </Grid>
                     </Grid>
 
@@ -172,7 +215,11 @@ const Contact = () => {
                             outline: 'none'
                           }}
                           required
-                        />
+                          values={values.message}
+                          onChange={handleChange}
+                        /><Typography color="error" textAlign='left'>
+                        {error.message}
+                      </Typography>
                       </Grid>
                     </Grid>
 
@@ -202,7 +249,7 @@ const Contact = () => {
           alignItems="center"
           item
           xs={12}
-          sx={{ height: "9vh" }}
+          sx={{ height: "9vh", display: {xs: 'none', lg: 'flex'} }}
         >
           <ArrowDown />
         </Grid>
