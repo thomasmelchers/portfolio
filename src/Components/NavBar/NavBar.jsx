@@ -21,7 +21,7 @@ const Navbar = () => {
     <header>
       <AppBar elevation={0}  sx={{ background: "none"}}>
         <Toolbar style={{ width: "80%", margin: "0 auto" }}>
-          <Link to="/" style={{ textDecoration: "none", flexGrow: 1 }}>
+          {/* <Link to="" style={{ textDecoration: "none", flexGrow: 1 }}> */}
             <Typography color='secondary'
               sx={{
                 fontFamily: "Pacifico",
@@ -34,7 +34,7 @@ const Navbar = () => {
                 M
               </span>{" "} */}
             </Typography>
-          </Link>
+          {/* </Link> */}
 
           <Box sx={{ display: { xs: "none", lg: "flex" } }}>
             {pages.map((page) => (
