@@ -51,7 +51,7 @@ const Contact = () => {
       setIsSended(true)
           }
     },
-    [error]
+    [error, isClicked]
   );
 
   return (
