@@ -17,6 +17,9 @@ const customTheme = createTheme({
         secondary: {
             main: secondaryColor,
         },
+        tertiary: {
+            main: thirdColor,
+        },
         error: {
             main: dangerColor
         }

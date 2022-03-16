@@ -27,7 +27,7 @@ const Home = () => {
           <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
             I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
           </Typography>
-          <Button size={'large'} buttonName={'About Me'}/>
+          <Button variant={'outlined'} size={'large'} buttonName={'About Me'}/>
         </Grid>
 
         <Grid
