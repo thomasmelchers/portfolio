@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { Box, Grid, TextField, TextareaAutosize } from "@mui/material";
+import React, { useRef, useState } from "react";
+import { Box, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import Button from "../Components/Button/Button";
 import emailjs from "@emailjs/browser";
@@ -7,6 +7,8 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
   console.log(form);
+
+  const [isSended, setIsSended] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,8 +28,11 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      setIsSended(true)
   };
 
+
+  console.log(isSended)
   return (
     <Box
       component="form"
@@ -48,7 +53,7 @@ const Contact = () => {
               sx={12}
               md={8}
               lg={8}
-              p={10}
+              p={5}
               sx={{
                 borderStyle: "solid",
                 borderColor: "#FFC900",
@@ -56,16 +61,23 @@ const Contact = () => {
                 bgcolor: "primary.main",
               }}
             >
-              <Box>
-                <Grid container justifyContent='space-between'>
-                  <Grid item xs={12} md={5}>
+              {(isSended === false)? <Box>
+                <Grid container>
 
-                    <Grid container justifyContent="space-between">
-                      <Grid item xs={12} md={5.5} mb={{xs: 2.5, md: 4}}>
+                  <Grid item xs={12}>
+                      <Typography variant='h3' color='secondary' mb={{xs:1.5, md:3}} sx={{fontWeight: 500}}> Get In Touch</Typography>
+                  </Grid>
+
+                  <Grid container justifyContent='space-between'>
+                  <Grid item xs={12} md={5.5}> 
+
+                    {/* FIRSTNAME */}
+                  <Grid container mb={{xs: 2.5, md: 4}}>
+                      <Grid item xs={12} >
                         <TextField
                           id="firstname"
                           name="firstname"
-                          label="Firstname"
+                          label="Your Firstname"
                           variant="outlined"
                           type="text"
                           fullWidth
@@ -73,11 +85,15 @@ const Contact = () => {
                           color="secondary"
                         />
                       </Grid>
-                      <Grid item xs={12} md={5.5} mb={{xs: 2.5, md: 4}}>
+                      </Grid>
+
+                    {/* NAME */}
+                      <Grid container mb={{xs: 2.5, md: 4}}>
+                      <Grid item xs={12} >
                         <TextField
                           id="name"
                           name="name"
-                          label="Name"
+                          label="Your Name"
                           variant="outlined"
                           type="text"
                           fullWidth
@@ -87,12 +103,13 @@ const Contact = () => {
                       </Grid>
                     </Grid>
 
+                    {/* COMPANY */}
                     <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
                         <TextField
                           id="company"
                           name="company"
-                          label="Company's name"
+                          label="the Company's Name"
                           variant="outlined"
                           type="text"
                           color="secondary"
@@ -102,12 +119,13 @@ const Contact = () => {
                       </Grid>
                     </Grid>
 
+                    {/* EMAIL */}
                     <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
                         <TextField
                           id="object"
                           name="object"
-                          label="Email Object"
+                          label="Your Email"
                           variant="outlined"
                           type="email"
                           color="secondary"
@@ -116,6 +134,12 @@ const Contact = () => {
                         />
                       </Grid>
                     </Grid>
+
+                    
+                  </Grid>
+
+                  <Grid item xs={12} md={5.5}>
+                    <Grid container mb={{xs: 2.5, md: 4}}>
 
                     <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12}>
@@ -131,22 +155,19 @@ const Contact = () => {
                         />
                       </Grid>
                     </Grid>
-                  </Grid>
 
-                  <Grid item xs={12} md={5}>
-                    <Grid container mb={{xs: 2.5, md: 4}}>
                       <Grid item xs={12} md={12}>
                         <TextareaAutosize
                           id="message"
                           name="message"
                           label="Message"
-                          placeholder="message"
+                          placeholder="What is your message?"
                           variant="standard"
                           minRows={12}
                           style={{
-                            width: "96%",
-                            padding: "2%",
-                            borderRadius: 10,
+                            width: "91%",
+                            padding: "4%",
+                            borderRadius: 12,
                             bgcolor: "primary.main",
                             outline: 'none'
                           }}
@@ -167,8 +188,11 @@ const Contact = () => {
                     </Grid>
 
                   </Grid>
+                  </Grid>
                 </Grid>
-              </Box>
+              </Box> : 
+
+               <Typography color='#04947d'>Thank you for your message, it has been well delivered ! You will receive a response a soon as possible. </Typography>}
             </Grid>
           </Grid>
         </Grid>
