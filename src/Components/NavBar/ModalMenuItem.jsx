@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, Typography, Box } from "@mui/material";
+import {Link} from 'react-scroll'
 
 const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
   const style = {
@@ -42,9 +43,9 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
       {pages.map((page) => (
           
           <Box key={page} style={{height: '20%', borderBottom: 'solid #FFC900'}} display='flex' justifyContent='center' alignItems='center'>
-              <Typography id="modal-modal-title" variant="h6" component="h2" textAlign='center' sx={{color:'#0A1A2E', fontWeight:'500', fontSize:'1.5rem'}}>
+              <Link to={page} spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} onClick={closeMenuItem}><Typography id="modal-modal-title" variant="h6" component="h2" textAlign='center' sx={{color:'#0A1A2E', fontWeight:'500', fontSize:'1.5rem'}}>
               {page}
-              </Typography>
+              </Typography></Link>
               </Box>
             ))}
 
