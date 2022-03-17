@@ -28,7 +28,7 @@ const Works = ({id}) => {
               <Grid container justifyContent="flex-start">
                 <PageTitle
                   numberTitle={"02."}
-                  pageTitle={"Realisation"}
+                  pageTitle={"Works"}
                 ></PageTitle>
               </Grid>
             </Grid>
