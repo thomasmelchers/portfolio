@@ -41,13 +41,12 @@ const AboutMe = () => {
                 Hello, my name is Thomas. I enjoy creating applications which
                 live on the web and playing with data. My interest started a few
                 years ago when I still was a student. At the University, I
-                invested some times working in a NPO. I was in charge of the
-                creation and the administration of the NPO’s website. The
-                promotion of our activities was one the main purpose, social
-                media were only at their beginnings. Later, I helped a friend to
-                promote his activities as a tour guide in Sri Lanka by creating
-                an other web application with all the information about its
-                product.{" "}
+                invested some times working in a NPO where I created and
+                administrated the website. The promotion of our activities was
+                one the main purpose, social media were only at their
+                beginnings. Later, I helped a friend to promote his activities
+                as a tour guide in Sri Lanka by creating an other web
+                application with all the information about its product.{" "}
               </Typography>
               <Typography
                 color="primary"
@@ -99,37 +98,23 @@ const AboutMe = () => {
                 that I have been learning, there are :
               </Typography>
               <Grid container justifyContent="center" mt={2}>
-                <Grid
-                  item
-                  xs={3}
-                >
+                <Grid item xs={3}>
                   <Skills skill="HTML 5 & CSS 3" />
                   <Skills skill="JAVASCRIPT (ES6)" />
                   <Skills skill="REACT" />
                 </Grid>
-                <Grid
-                  item
-                  xs={3}
-                  pl={1.5}
-                >
+                <Grid item xs={3} pl={1.5}>
                   <Skills skill="SQL" />
                   <Skills skill="GRAPHQL" />
                 </Grid>
-                <Grid
-                  item
-                  xs={4}
-                >
+                <Grid item xs={4}>
                   <Skills skill="NODE & EXPRESS.JS" />
                   <Skills skill="PHP" />
                   <Skills skill="MONGDO DB" />
                 </Grid>
               </Grid>
             </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-            ></Grid>
+            <Grid item xs={12} md={4}></Grid>
           </Grid>
         </Grid>
         <Grid
