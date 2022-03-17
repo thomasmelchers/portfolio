@@ -6,7 +6,6 @@ import codeflix from '../assets/screenshots/codeflix.png'
 import friendlyBook from '../assets/screenshots/friendly-book.png'
 import greenCottage from '../assets/screenshots/greencottage.png'
 import wiki from '../assets/screenshots/wiki.png'
-import { green } from '@mui/material/colors'
 
 
 
@@ -51,7 +50,7 @@ const Data = [
     { id: 5,
         projectName: 'Codeflix', 
         image: codeflix,
-        technologies: 'HTML, CSS, PHP, Bootstrap',
+        technologies: 'HTML, CSS, PHP, SQL, Bootstrap',
         description: 'Codeflix is a platform where you can discover tutorials about coding. The purpose of this project was to create a dynamic website inspired by Netflix, Amazon or Disney +',
         github: 'https://github.com/thomasmelchers/codeflix',
         url:'http://www.codefilx.kamilbiczyk.be/',
@@ -60,7 +59,7 @@ const Data = [
     { id: 6,
         projectName: 'FriendlyBook', 
         image: friendlyBook,
-        technologies: 'React, Node.JS & Express, MongoDB, Mongoose, Material UI',
+        technologies: 'Node.JS, Express, MongoDB, Mongoose, React, Material UI',
         description: 'FriendlyBook is a platform directly inspired by Facebook. I create here my first MERN with two fron-end developers.',
         github: 'https://github.com/thomasmelchers/BookFace',
         url:'https://friendlybooktrio.herokuapp.com/',
@@ -69,7 +68,7 @@ const Data = [
     { id: 7,
         projectName: 'Green Cottage', 
         image: greenCottage,
-        technologies: 'Node.JS & Express, MongoDB, Mongoose, React, Material UI',
+        technologies: 'Node.JS, Express, MongoDB, Mongoose, React, Material UI',
         description: 'Individual project where I create a plateform where users can registrate their accomodation or can book one. The project is still running.',
         github: 'https://github.com/thomasmelchers/npProject',
         url:'https://green-cottages.herokuapp.com/',
