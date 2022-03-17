@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Box, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
-import ArrowDown from "../Components/ArrowDown/ArrowDown";
+import ArrowUp from "../Components/ArrowUp/ArrowUp";
 import Button from "../Components/Button/Button";
 import emailjs from "@emailjs/browser";
 import Validation from "../Components/ContactForm/Validation";
+import {Link} from 'react-scroll'
 
 const Contact = () => {
   const form = useRef();
@@ -251,7 +252,7 @@ const Contact = () => {
           xs={12}
           sx={{ height: "9vh", display: {xs: 'none', lg: 'flex'} }}
         >
-          <ArrowDown />
+          <Link to="Home" spy={true} smooth={true} offset={50} duration={500} ><ArrowUp /></Link>
         </Grid>
       </Grid>
     </Box>

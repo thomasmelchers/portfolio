@@ -3,6 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import PageTitle from "../Components/PageTitle/PageTitle";
 import Skills from "../Components/Skills/Skills";
+import {Link} from 'react-scroll'
 
 const AboutMe = () => {
   return (
@@ -17,7 +18,7 @@ const AboutMe = () => {
           item
           mt="6vh"
           xs={12}
-          sx={{ borderStyle: "dotted", borderColor: "yellow", height: "85vh" }}
+          sx={{ height: "85vh" }}
         >
           <Grid container>
             <Grid
@@ -28,7 +29,7 @@ const AboutMe = () => {
               item
               xs={12}
               md={8}
-              sx={{ borderStyle: "dotted", borderColor: "red" }}
+              
             >
               <PageTitle numberTitle={"01."} pageTitle={"About Me"}></PageTitle>
               <Typography
@@ -71,9 +72,8 @@ const AboutMe = () => {
                 Today, I am completing a training as web developer at BeCode in
                 Brussels. Self-learning and active pedagogy were the two
                 pillars. I have been training myself on individual and group
-                projects that you can discover{" "}
-                {/* <span style={{ color: "#FFC900" }}> */}over here.{" "}
-                {/* </span> */} At the beginning, I focus on the back-end
+                projects.
+                At the beginning, I focus on the back-end
                 development and by designing the database's architecture. Then,
                 I want it to have a better understanding of front-end. How do I
                 fetch the data? How React is working? So now, I have got
@@ -92,7 +92,7 @@ const AboutMe = () => {
                 Brussels. Self-learning and active pedagogy were the two
                 pillars. I have been training myself on individual and group
                 projects that you can discover{" "}
-                <span style={{ color: "#FFC900" }}>over here. </span> So now, I
+                <Link to="Works" spy={true} smooth={true} offset={50} duration={500} sx={{ color: "#FFC900", cursor: 'pointer' }}>over here. </Link> So now, I
                 have got knowledge about both aspects of the web development and
                 I am interested by both too. Among the programming languages
                 that I have been learning, there are :
@@ -125,7 +125,7 @@ const AboutMe = () => {
           xs={12}
           sx={{ height: "9vh" }}
         >
-          <ArrowDown />
+           <Link to="Works" spy={true} smooth={true} offset={50} duration={500}><ArrowDown rotate='rotate(-90deg)'/></Link>
         </Grid>
       </Grid>
     </Box>

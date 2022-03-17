@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import Button from "../Components/Button/Button";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
           <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
             I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
           </Typography>
-          <Button variant={'outlined'} size={'large'} buttonName={'About Me'}/>
+          <Link to="About Me" spy={true} smooth={true} offset={50} duration={500}><Button variant={'outlined'} size={'large'} buttonName={'About Me'}/></Link>
         </Grid>
 
         <Grid
@@ -38,7 +39,7 @@ const Home = () => {
           xs={12}
           style={{ height: "10vh" }}
         >
-          <ArrowDown />
+          <Link to="About Me" spy={true} smooth={true} offset={50} duration={500}><ArrowDown /></Link>
         </Grid>
 
       </Grid>
