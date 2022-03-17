@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 
 import { AppBar, IconButton, Toolbar, Box, Typography, Tooltip } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-scroll'
 import ModalMenuItem from "./ModalMenuItem";
 
 const Navbar = () => {
-    const pages = ["Home", "About Me", "Skills", "Works", "Contact"];
+    const pages = ["Home", "About Me", "Works", "Contact"];
 
   // HANDLING THE MENU MODAL
   const [open, setOpen] = useState(false)
@@ -21,7 +21,7 @@ const Navbar = () => {
     <header>
       <AppBar elevation={0}  sx={{ background: "none"}}>
         <Toolbar style={{ width: "80%", margin: "0 auto" }}>
-          {/* <Link to="" style={{ textDecoration: "none", flexGrow: 1 }}> */}
+          <Link to="Home" spy={true} smooth={true} offset={50} duration={500} style={{ textDecoration: "none", flexGrow: 1, cursor: 'pointer' }}>
             <Typography color='secondary'
               sx={{
                 fontFamily: "Pacifico",
@@ -34,12 +34,12 @@ const Navbar = () => {
                 M
               </span>{" "} */}
             </Typography>
-          {/* </Link> */}
+          </Link>
 
           <Box sx={{ display: { xs: "none", lg: "flex" } }}>
             {pages.map((page) => (
               <Box key={page} ml={3}>
-                {/* <Link to="" style={{ textDecoration: "none", marginLeft: 2 }}> */}
+                <Link to={page} spy={true} smooth={true} offset={50} duration={500} style={{ textDecoration: "none", marginLeft: 2, cursor: 'pointer' }}>
                   <Typography
                     color='primary'
                     style={{
@@ -50,7 +50,7 @@ const Navbar = () => {
                   >
                     {page}
                   </Typography>
-                {/* </Link> */}
+                </Link>
               </Box>
             ))}
           </Box>
