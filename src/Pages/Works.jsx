@@ -48,7 +48,7 @@ const Works = ({id}) => {
           xs={12}
           sx={{ height: "9vh" }}
         >
-          <Link to="Contact" spy={true} smooth={true} offset={50} duration={500}><ArrowDown /></Link>
+          <Link to="Contact" spy={true} smooth={true} offset={0} duration={500}><ArrowDown /></Link>
         </Grid>
       </Grid>
     </Box>

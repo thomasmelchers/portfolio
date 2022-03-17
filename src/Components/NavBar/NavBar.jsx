@@ -21,7 +21,7 @@ const Navbar = () => {
     <header>
       <AppBar elevation={0}  sx={{ background: "none"}}>
         <Toolbar style={{ width: "80%", margin: "0 auto" }}>
-          <Link to="Home" spy={true} smooth={true} offset={50} duration={500} style={{ textDecoration: "none", flexGrow: 1, cursor: 'pointer' }}>
+          <Link to="Home" spy={true} smooth={true} offset={-100} duration={500} style={{ textDecoration: "none", flexGrow: 1, cursor: 'pointer' }}>
             <Typography color='secondary'
               sx={{
                 fontFamily: "Pacifico",
@@ -39,7 +39,7 @@ const Navbar = () => {
           <Box sx={{ display: { xs: "none", lg: "flex" } }}>
             {pages.map((page) => (
               <Box key={page} ml={3}>
-                <Link to={page} spy={true} smooth={true} offset={50} duration={500} style={{ textDecoration: "none", marginLeft: 2, cursor: 'pointer' }}>
+                <Link to={page} spy={true} smooth={true} offset={0} duration={500} style={{ textDecoration: "none", marginLeft: 2, cursor: 'pointer' }}>
                   <Typography
                     color='primary'
                     style={{

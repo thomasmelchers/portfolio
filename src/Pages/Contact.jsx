@@ -252,7 +252,7 @@ const Contact = () => {
           xs={12}
           sx={{ height: "9vh", display: {xs: 'none', lg: 'flex'} }}
         >
-          <Link to="Home" spy={true} smooth={true} offset={50} duration={500} ><ArrowUp /></Link>
+          <Link to="Home" spy={true} smooth={true} offset={0} duration={500} ><ArrowUp /></Link>
         </Grid>
       </Grid>
     </Box>

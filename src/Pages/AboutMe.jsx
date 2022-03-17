@@ -92,7 +92,7 @@ const AboutMe = () => {
                 Brussels. Self-learning and active pedagogy were the two
                 pillars. I have been training myself on individual and group
                 projects that you can discover{" "}
-                <Link to="Works" spy={true} smooth={true} offset={50} duration={500} sx={{ color: "#FFC900", cursor: 'pointer' }}>over here. </Link> So now, I
+                <Link to="Works" spy={true} smooth={true} offset={0} duration={500} sx={{ color: "#FFC900", cursor: 'pointer' }}>over here. </Link> So now, I
                 have got knowledge about both aspects of the web development and
                 I am interested by both too. Among the programming languages
                 that I have been learning, there are :
@@ -125,7 +125,7 @@ const AboutMe = () => {
           xs={12}
           sx={{ height: "9vh" }}
         >
-           <Link to="Works" spy={true} smooth={true} offset={50} duration={500}><ArrowDown rotate='rotate(-90deg)'/></Link>
+           <Link to="Works" spy={true} smooth={true} offset={0} duration={500}><ArrowDown rotate='rotate(-90deg)'/></Link>
         </Grid>
       </Grid>
     </Box>
