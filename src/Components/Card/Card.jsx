@@ -51,7 +51,7 @@ const CardWork = ({ data }) => {
                   <Typography variant='h6' color='secondary' sx={{textTransform: 'uppercase', fontWeight: 600}}>{projectName}</Typography>
                 </Grid>
                 <Grid item >
-                <Typography color='#0A1A2E'>{technologies}</Typography>
+                <Typography color='#0A1A2E' sx={{fontSize: '0.9rem'}}>{technologies}</Typography>
                 <Typography color='#0A1A2E'>{role}</Typography>
                 </Grid>
                 <Grid item >

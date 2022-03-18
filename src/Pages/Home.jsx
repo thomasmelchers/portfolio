@@ -21,11 +21,11 @@ const Home = () => {
           style={{ height: "90vh"}}
           pl={"10%"}
         >
-          <Typography color='secondary' sx={{ fontSize: {xs:"1.3rem", md:'1.4rem', lg: '1.7rem'} }}>Hello, my name is</Typography>
-          <Typography color='primary' sx={{ fontSize: {xs: "3rem", md:"4.5rem", lg: "6rem"}, fontWeight: 800 }}>
+          <Typography color='secondary' sx={{ fontSize: {xs:"1rem", md:'1.4rem', lg: '1.7rem'} }}>Hello, my name is</Typography>
+          <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"4.5rem", lg: "6rem"}, fontWeight: 800 }}>
             Thomas MELCHERS.
           </Typography>
-          <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
+          <Typography color='primary' sx={{ fontSize: {xs: "1.5rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
             I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
           </Typography>
           <Link to="About Me" spy={true} smooth={true} offset={0} duration={500}><Button variant={'outlined'} size={'large'} buttonName={'About Me'}/></Link>
