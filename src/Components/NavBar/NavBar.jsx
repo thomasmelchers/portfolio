@@ -6,7 +6,7 @@ import {Link} from 'react-scroll'
 import ModalMenuItem from "./ModalMenuItem";
 
 const Navbar = () => {
-    const pages = ["Home", "About Me", "Works", "Contact"];
+    const pages = ["Home", "About Me", "Projects", "Contact"];
 
   // HANDLING THE MENU MODAL
   const [open, setOpen] = useState(false)

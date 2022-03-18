@@ -65,10 +65,10 @@ const Contact = () => {
     >
       <Grid
         container
-        style={{ height: "100vh" }}
+        sx={{ height: {xs: '120vh', lg:"100vh"} }}
         px={"10%"} /* direction="column" */
       >
-        <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "85vh"}, overflow: 'scroll' }}>
+        <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "100vh", lg: "80vh"},/*  overflow: 'scroll' */ }}>
           <Grid container justifyContent="center" alignItems="center">
             <Grid
               item
@@ -78,8 +78,8 @@ const Contact = () => {
               p={{xs:2, lg: 5}}
               px={{xs: 4}}
               sx={{
-                borderStyle: "solid",
-                borderColor: "#FFC900",
+                /* borderStyle: "solid", */
+                /* borderColor: "#FFC900", */
                 borderRadius: 10,
                 bgcolor: "primary.main",
               }}

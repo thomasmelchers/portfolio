@@ -13,7 +13,7 @@ function App() {
         <NavBar />
         <section id='Home'><Home /></section>
         <section id='About Me'><AboutMe /></section>
-        <section id='Works'><Works /></section>
+        <section id='Projects'><Works /></section>
         <section id='Contact'> <Contact /></section>
     </div>
   );

@@ -82,7 +82,7 @@ const AboutMe = () => {
                 Brussels. Self-learning and active pedagogy are its two
                 pillars. I have been training myself on individual and group
                 projects. Therefore, I have now gained knowledge in both aspects of
-                development and I am interested by both too. Those are the programming languages learned :
+                development and I am interested in both. Those are the programming languages learned :
               </Typography>
               <Grid container justifyContent="center" mt={2}>
                 <Grid item xs={3}>
