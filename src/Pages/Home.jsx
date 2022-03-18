@@ -26,7 +26,7 @@ const Home = () => {
             Thomas MELCHERS.
           </Typography>
           <Typography color='primary' sx={{ fontSize: {xs: "1.5rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
-            I am Junior <span style={{color: '#FFC900'}}>Web Developer </span>
+            I am a <span style={{color: '#FFC900'}}>Junior Web Developer</span>
           </Typography>
           <Link to="About Me" spy={true} smooth={true} offset={0} duration={500}><Button variant={'outlined'} size={'large'} buttonName={'About Me'}/></Link>
         </Grid>
