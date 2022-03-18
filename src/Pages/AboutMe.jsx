@@ -32,15 +32,15 @@ const AboutMe = () => {
                 fontSize="1.2rem"
                 sx={{ display: { xs: "none", lg: "flex" } }}
               >
-                Hello, my name is Thomas. I enjoy creating applications which
-                live on the web and playing with data. My interest started a few
-                years ago when I still was a student. At the University, I
-                invested some times working in a NPO where I created and
-                administrated the website. The promotion of our activities was
-                one the main purpose, social media were only at their
-                beginnings. Later, I helped a friend to promote his activities
-                as a tour guide in Sri Lanka by creating an other web
-                application with all the information about its product.{" "}
+                Hello, my name is Thomas. I enjoy creating web applications and
+                playing with data. This interest started a few years ago when I
+                still was a university student. At that time, I devoted my times
+                to work for an NPO for which I created and administrated a
+                website. Its main objective was the promotion of our activities,
+                as social medias only were at their beginnings. Later on, I
+                helped a friend to promote his activities as a tour guide in Sri
+                Lanka by creating an other web application with all the
+                information about his products.{" "}
               </Typography>
               <Typography
                 color="primary"
@@ -49,11 +49,10 @@ const AboutMe = () => {
                 fontSize="1rem"
                 sx={{ display: { lg: "none", xs: "flex" } }}
               >
-                Hello, my name is Thomas. I enjoy creating applications which
-                live on the web and playing with data. My interest started a few
+                Hello, my name is Thomas. I enjoy creating web applications and playing with data. This interest started a few
                 years ago when I still was a student. I created a website to
-                promote the activities of the NPO where I was involved. Then, I
-                created a website for a travel guide and promote its activities.
+                promote the activities of an NPO where I was involved. Later on, I
+                created a website for a travel guide to promote his activities.
               </Typography>
               <Typography
                 color="primary"
@@ -63,15 +62,14 @@ const AboutMe = () => {
                 sx={{ display: { xs: "none", lg: "flex" } }}
               >
                 Today, I am completing a training as web developer at BeCode in
-                Brussels. Self-learning and active pedagogy were the two
-                pillars. I have been training myself on individual and group
-                projects. At the beginning, I focus on the back-end development
-                and by designing the database's architecture. Then, I want it to
-                have a better understanding of front-end. How do I fetch the
-                data? How React is working? So now, I have got knowledge about
-                both aspects of the web development and I am interested by both
-                too. Among the programming languages that I have been learning,
-                there are :
+                Brussels. Self-learning and active pedagogy are its two pillars.
+                I have been training myself on individual and group projects. At
+                the beginning, I focused on back-end development and designing
+                databases architecture. After that, I want it to have a better
+                understanding of front-end development. How do I fetch the data?
+                How does React work? Therefore, I have now gained knowledge in
+                both aspects of web development and I am interested in both.
+                Those are the programming languages learned :
               </Typography>
               <Typography
                 color="primary"
@@ -81,11 +79,10 @@ const AboutMe = () => {
                 sx={{ display: { lg: "none" } }}
               >
                 Today, I am completing a training as web developer at BeCode in
-                Brussels. Self-learning and active pedagogy were the two
+                Brussels. Self-learning and active pedagogy are its two
                 pillars. I have been training myself on individual and group
-                projects. So now, I have got knowledge about both aspects of the
-                web development and I am interested by both too. Among the
-                programming languages that I have been learning, there are :
+                projects. Therefore, I have now gained knowledge in both aspects of
+                development and I am interested by both too. Those are the programming languages learned :
               </Typography>
               <Grid container justifyContent="center" mt={2}>
                 <Grid item xs={3}>
