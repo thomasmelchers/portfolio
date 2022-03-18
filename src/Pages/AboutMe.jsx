@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import PageTitle from "../Components/PageTitle/PageTitle";
 import Skills from "../Components/Skills/Skills";
-import {Link} from 'react-scroll'
+import { Link } from "react-scroll";
 
 const AboutMe = () => {
   return (
@@ -13,13 +13,7 @@ const AboutMe = () => {
         style={{ height: "100vh" }}
         px="10%" /* direction="column" */
       >
-        <Grid
-          container
-          item
-          mt="6vh"
-          xs={12}
-          sx={{ height: "85vh" }}
-        >
+        <Grid container item mt="6vh" xs={12} sx={{ height: "85vh" }}>
           <Grid container>
             <Grid
               container
@@ -29,7 +23,6 @@ const AboutMe = () => {
               item
               xs={12}
               md={8}
-              
             >
               <PageTitle numberTitle={"01."} pageTitle={"About Me"}></PageTitle>
               <Typography
@@ -72,14 +65,13 @@ const AboutMe = () => {
                 Today, I am completing a training as web developer at BeCode in
                 Brussels. Self-learning and active pedagogy were the two
                 pillars. I have been training myself on individual and group
-                projects.
-                At the beginning, I focus on the back-end
-                development and by designing the database's architecture. Then,
-                I want it to have a better understanding of front-end. How do I
-                fetch the data? How React is working? So now, I have got
-                knowledge about both aspects of the web development and I am
-                interested by both too. Among the programming languages that I
-                have been learning, there are :
+                projects. At the beginning, I focus on the back-end development
+                and by designing the database's architecture. Then, I want it to
+                have a better understanding of front-end. How do I fetch the
+                data? How React is working? So now, I have got knowledge about
+                both aspects of the web development and I am interested by both
+                too. Among the programming languages that I have been learning,
+                there are :
               </Typography>
               <Typography
                 color="primary"
@@ -91,11 +83,9 @@ const AboutMe = () => {
                 Today, I am completing a training as web developer at BeCode in
                 Brussels. Self-learning and active pedagogy were the two
                 pillars. I have been training myself on individual and group
-                projects that you can discover{" "}
-                <Link to="Works" spy={true} smooth={true} offset={0} duration={500} sx={{ color: "#FFC900", cursor: 'pointer' }}>over here. </Link> So now, I
-                have got knowledge about both aspects of the web development and
-                I am interested by both too. Among the programming languages
-                that I have been learning, there are :
+                projects. So now, I have got knowledge about both aspects of the
+                web development and I am interested by both too. Among the
+                programming languages that I have been learning, there are :
               </Typography>
               <Grid container justifyContent="center" mt={2}>
                 <Grid item xs={3}>
@@ -125,7 +115,9 @@ const AboutMe = () => {
           xs={12}
           sx={{ height: "9vh" }}
         >
-           <Link to="Works" spy={true} smooth={true} offset={0} duration={500}><ArrowDown rotate='rotate(-90deg)'/></Link>
+          <Link to="Works" spy={true} smooth={true} offset={0} duration={500}>
+            <ArrowDown rotate="rotate(-90deg)" />
+          </Link>
         </Grid>
       </Grid>
     </Box>
