@@ -112,7 +112,7 @@ const AboutMe = () => {
           xs={12}
           sx={{ height: "9vh" }}
         >
-          <Link to="Works" spy={true} smooth={true} offset={0} duration={500}>
+          <Link to="Projects" spy={true} smooth={true} offset={0} duration={500}>
             <ArrowDown rotate="rotate(-90deg)" />
           </Link>
         </Grid>
