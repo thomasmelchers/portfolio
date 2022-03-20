@@ -3,6 +3,16 @@ import { Box, Grid, Typography } from "@mui/material";
 import Button from "../Components/Button/Button";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import { Link } from "react-scroll";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+const icon = {
+  root: {
+    '&:hover' : {
+      color: 'secondary.main'
+    }
+  }
+}
 
 const Home = () => {
   return (
@@ -29,6 +39,13 @@ const Home = () => {
             I am a <span style={{color: '#FFC900'}}>Junior Web Developer</span>
           </Typography>
           <Link to="About Me" spy={true} smooth={true} offset={0} duration={500}><Button variant={'outlined'} size={'large'} buttonName={'About Me'}/></Link>
+          <Grid container mt={3}>
+            <Grid item mr={1}><a href='https://github.com/thomasmelchers' target="_blank" rel="noopener noreferrer" sx={{textDecoration: 'none'}}> <GitHubIcon color='primary'fontSize='large' sx={icon.root}/></a></Grid>
+            <Grid item ><a href='https://www.linkedin.com/in/thomasmelchers/' target="_blank" rel="noopener noreferrer" sx={{textDecoration: 'none'}}> <LinkedInIcon color='primary' fontSize='large' sx={icon.root}/></a></Grid>
+          
+          
+          </Grid>
+          
         </Grid>
 
         <Grid
@@ -40,6 +57,7 @@ const Home = () => {
           style={{ height: "10vh" }}
         >
           <Link to="About Me" spy={true} smooth={true} offset={0} duration={500}><ArrowDown /></Link>
+          
         </Grid>
 
       </Grid>
