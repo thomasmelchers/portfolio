@@ -19,6 +19,9 @@ const style ={
     }, 
     border: '2px solid #CCD7F5',
     borderRadius: '8px'
+  },
+  icon: {
+    textDecoration: 'none'
   }
 }
 
@@ -57,7 +60,7 @@ const CardWork = ({ data }) => {
                 <Typography /* color='#0A1A2E' */ color='primary'>{role}</Typography>
                 </Grid>
                 <Grid item >
-                  <a href={github} target="_blank" rel="noopener noreferrer" style={{color:'#0A1A2E', textDecoration: 'none'}}> <GitHubIcon /></a>
+                  <a href={github} target="_blank" rel="noopener noreferrer" sx={style.icon}> <GitHubIcon color='secondary'/></a>
                   {/* <a href={url} style={{color:'#0A1A2E', textDecoration: 'none'}}> <LaunchIcon /></a> */}
                 </Grid>
               </Grid>
