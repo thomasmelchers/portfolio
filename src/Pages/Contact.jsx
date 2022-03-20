@@ -1,11 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
-import { Box, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
+import { Box, Grid, TextField, TextareaAutosize, Typography, Input } from "@mui/material";
 import ArrowUp from "../Components/ArrowUp/ArrowUp";
 import Button from "../Components/Button/Button";
 import emailjs from "@emailjs/browser";
 import Validation from "../Components/ContactForm/Validation";
 import {Link} from 'react-scroll'
 
+
+const textcolor = {
+  root: {'&.MuiInput-input': {color : 'red'}}
+}
 const Contact = () => {
   const form = useRef();
 
@@ -79,7 +83,7 @@ const Contact = () => {
               px={{xs: 4}}
               sx={{
                 borderStyle: "solid",
-                borderColor: "#CCD7F5",
+                borderColor: "secondary.main", //#CCD7F5
                 borderRadius: 10,
               }}
             >
@@ -105,9 +109,10 @@ const Contact = () => {
                           type="text"
                           fullWidth
                           required
-                          color="secondary"
+                          color="primary"
                           values={values.firstname}
                           onChange={handleChange}
+                          focused
                         />
                       </Grid> <Typography color="error" textAlign='left'>
                             {error.firstname}
@@ -125,9 +130,10 @@ const Contact = () => {
                           type="text"
                           fullWidth
                           required
-                          color="secondary"
+                          color="primary"
                           values={values.name}
                           onChange={handleChange}
+                          focused
                         /><Typography color="error" textAlign='left'>
                         {error.name}
                       </Typography>
@@ -140,14 +146,15 @@ const Contact = () => {
                         <TextField
                           id="company"
                           name="company"
-                          label="the Company's Name"
+                          label="Your Company's Name"
                           variant="outlined"
                           type="text"
-                          color="secondary"
+                          color="primary"
                           fullWidth
                           required
                           values={values.company}
                           onChange={handleChange}
+                          focused
                         /><Typography color="error" textAlign='left'>
                         {error.company}
                       </Typography>
@@ -163,11 +170,12 @@ const Contact = () => {
                           label="Your Email"
                           variant="outlined"
                           type="email"
-                          color="secondary"
+                          color="primary"
                           fullWidth
                           required
                           values={values.email}
                           onChange={handleChange}
+                          focused
                         /> <Typography color="error" textAlign='left'>
                         {error.email}
                       </Typography>
@@ -188,11 +196,12 @@ const Contact = () => {
                           label=" Object"
                           variant="outlined"
                           type="text"
-                          color="secondary"
+                          color="primary"
                           fullWidth
                           required
                           values={values.object}
                           onChange={handleChange}
+                          focused
                         /><Typography color="error" textAlign='left'>
                         {error.object}
                       </Typography>
