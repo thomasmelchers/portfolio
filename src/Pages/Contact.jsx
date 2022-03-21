@@ -112,6 +112,12 @@ const Contact = () => {
                           color="primary"
                           values={values.firstname}
                           onChange={handleChange}
+                          InputLabelProps = {{
+                            sx: {color:"primary.main"} 
+                          }}
+                          inputProps = {{
+                            sx: {color: "primary.main"}
+                          }}
                           focused
                         />
                       </Grid> <Typography color="error" textAlign='left'>
@@ -133,6 +139,9 @@ const Contact = () => {
                           color="primary"
                           values={values.name}
                           onChange={handleChange}
+                          inputProps = {{
+                            sx: {color: "primary.main"}
+                          }}
                           focused
                         /><Typography color="error" textAlign='left'>
                         {error.name}
@@ -154,6 +163,9 @@ const Contact = () => {
                           required
                           values={values.company}
                           onChange={handleChange}
+                          inputProps = {{
+                            sx: {color: "primary.main"}
+                          }}
                           focused
                         /><Typography color="error" textAlign='left'>
                         {error.company}
@@ -175,6 +187,9 @@ const Contact = () => {
                           required
                           values={values.email}
                           onChange={handleChange}
+                          inputProps = {{
+                            sx: {color: "primary.main"}
+                          }}
                           focused
                         /> <Typography color="error" textAlign='left'>
                         {error.email}
@@ -201,6 +216,9 @@ const Contact = () => {
                           required
                           values={values.object}
                           onChange={handleChange}
+                          inputProps = {{
+                            sx: {color: "primary.main"}
+                          }}
                           focused
                         /><Typography color="error" textAlign='left'>
                         {error.object}

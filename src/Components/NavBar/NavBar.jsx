@@ -4,6 +4,7 @@ import { AppBar, IconButton, Toolbar, Box, Typography, Tooltip } from "@mui/mate
 import MenuIcon from "@mui/icons-material/Menu";
 import {Link} from 'react-scroll'
 import ModalMenuItem from "./ModalMenuItem";
+import { borderBottom } from '@mui/system';
 
 const Navbar = () => {
     const pages = ["Home", "About Me", "Projects", "Contact"];
@@ -42,10 +43,15 @@ const Navbar = () => {
                 <Link to={page} spy={true} smooth={true} offset={0} duration={500} style={{ textDecoration: "none", marginLeft: 2, cursor: 'pointer' }}>
                   <Typography
                     color='primary'
-                    style={{
+                    sx={{
                       /* fontFamily: "Fredoka", */
                       fontSize: "1.1rem",
                       fontWeight: "650",
+                      '&:hover':{
+                        color: 'secondary.main',
+                        transform: 'scale(1.2)',
+                        borderBottom: '3px solid #FFC900'
+                      }
                     }}
                   >
                     {page}

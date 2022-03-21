@@ -5,7 +5,8 @@ import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutl
 const ArrowDown = () => {
   return (
     <IconButton>
-        <ArrowBackIosNewOutlinedIcon color='primary' style={{transform: 'rotate(-90deg)', fontSize: '4rem' }}/>
+        <ArrowBackIosNewOutlinedIcon color='primary' sx={{transform: 'rotate(-90deg)', fontSize: '4rem','&:hover':{
+                        color: 'secondary.main'} }}/>
     </IconButton>
   )
 }

@@ -85,12 +85,12 @@ const AboutMe = () => {
                 development and I am interested in both. Those are the programming languages learned :
               </Typography>
               <Grid container justifyContent="center" mt={2}>
-                <Grid item xs={3}>
+                <Grid item xs={4} sx={{ paddingLeft: {xs: 3, lg: 5}}}>
                   <Skills skill="HTML 5 & CSS 3" />
                   <Skills skill="JAVASCRIPT (ES6)" />
                   <Skills skill="REACT" />
                 </Grid>
-                <Grid item xs={3} pl={1.5}>
+                <Grid item xs={4} sx={{paddingLeft: {xs: 5, lg: 8}}}>
                   <Skills skill="SQL" />
                   <Skills skill="GRAPHQL" />
                 </Grid>
