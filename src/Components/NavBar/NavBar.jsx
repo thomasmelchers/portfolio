@@ -5,6 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {Link} from 'react-scroll'
 import ModalMenuItem from "./ModalMenuItem";
 import { borderBottom } from '@mui/system';
+import Button from '../Button/Button'
+import {Links as LinkR} from 'react-router-dom'
 
 const Navbar = () => {
     const pages = ["Home", "About Me", "Projects", "Contact"];
@@ -71,6 +73,9 @@ const Navbar = () => {
               <ModalMenuItem open={open} closeMenuItem={closeMenuItem} pages={pages}/> 
            
           </Box>
+          {/* <Box display='flex' justifyContent='flex-end' ml={5} sx={{mt:{xs: 0, lg: 2}}}>
+            <a href='./resume.pdf' download style={{textDecoration: 'none'}}><Button variant={'outlined'} size={'large'} buttonName={'RESUME'}></Button></a>
+            </Box> */}
         </Toolbar>
       </AppBar>
     </header>

@@ -39,6 +39,7 @@ const CardWork = ({ data }) => {
         url,
         description,
         role,
+        status
       } = item;
       return (
         <Grid item xs={12} lg={2.75} key={id} m={1.5}>
@@ -48,7 +49,7 @@ const CardWork = ({ data }) => {
               component="img"
               image={image}
               alt={projectName}
-              sx={{height:{xs: '57%', lg: "50%"}, borderRadius: '8px'}}
+              sx={{height:{xs: '57%', lg: "50%"}, borderRadius: '8px 8px 0 0'}}
             />
             <CardContent sx={{ height:{xs: '43%', lg: "50%"}, /* backgroundColor: "#CCD7F5" */ backgroundColor:'#0A1A2E'}}>
               <Grid container direction='column' justifyContent='space-around' sx={{ height: '85%'}}>
@@ -58,6 +59,8 @@ const CardWork = ({ data }) => {
                 <Grid item >
                 <Typography /* color='#0A1A2E' */ color='primary' sx={{fontSize: '0.9rem'}}>{technologies}</Typography>
                 <Typography /* color='#0A1A2E' */ color='primary'>{role}</Typography>
+                {(status === 'In Progress') && 
+                 <Typography /* color='#0A1A2E' */ color='secondary' sx={{fontSize: '0.7rem'}}>{status}</Typography>}
                 </Grid>
                 <Grid item >
                   <a href={github} target="_blank" rel="noopener noreferrer" sx={style.icon}> <GitHubIcon color='secondary'/></a>
