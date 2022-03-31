@@ -49,9 +49,9 @@ const CardWork = ({ data }) => {
               component="img"
               image={image}
               alt={projectName}
-              sx={{height:{xs: '57%', lg: "50%"}, borderRadius: '8px 8px 0 0'}}
+              sx={{height:{xs: '55%', lg: "47%"}, borderRadius: '8px 8px 0 0'}}
             />
-            <CardContent sx={{ height:{xs: '43%', lg: "50%"}, /* backgroundColor: "#CCD7F5" */ backgroundColor:'#0A1A2E'}}>
+            <CardContent sx={{ height:{xs: '45%', lg: "53%"}, /* backgroundColor: "#CCD7F5" */ backgroundColor:'#0A1A2E'}}>
               <Grid container direction='column' justifyContent='space-around' sx={{ height: '85%'}}>
                 <Grid item>
                   <Typography variant='h6' color='secondary' sx={{textTransform: 'uppercase', fontWeight: 600}}>{projectName}</Typography>
@@ -60,7 +60,7 @@ const CardWork = ({ data }) => {
                 <Typography /* color='#0A1A2E' */ color='primary' sx={{fontSize: '0.9rem'}}>{technologies}</Typography>
                 <Typography /* color='#0A1A2E' */ color='primary'>{role}</Typography>
                 {(status === 'In Progress') && 
-                 <Typography /* color='#0A1A2E' */ color='secondary' sx={{fontSize: '0.7rem'}}>{status}</Typography>}
+                 <Typography /* color='#0A1A2E' */ color='secondary' sx={{fontSize: '0.5rem'}}>{status}</Typography>}
                 </Grid>
                 <Grid item >
                   <a href={github} target="_blank" rel="noopener noreferrer" sx={style.icon}> <GitHubIcon color='secondary'/></a>
