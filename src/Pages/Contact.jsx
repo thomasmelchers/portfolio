@@ -52,7 +52,6 @@ const Contact = () => {
         form.current,
         process.env.REACT_APP_EMAILJS_USER_ID
       )
-
       setIsSended(true)
           }
     },
