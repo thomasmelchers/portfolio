@@ -5,6 +5,7 @@ import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import { Link } from "react-scroll";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Typewriter from 'typewriter-effect'
 
 const icon = {
   root: {
@@ -35,9 +36,11 @@ const Home = () => {
           <Typography color='primary' sx={{ fontSize: {xs: "2rem", md:"4.5rem", lg: "6rem"}, fontWeight: 800 }}>
             Thomas MELCHERS.
           </Typography>
+          <Grid container justifyContent='flex-start'>
           <Typography color='primary' sx={{ fontSize: {xs: "1.5rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600 }} mb={4}>
-            I am a <span style={{color: '#FFC900'}}>Junior Web Developer</span>
-          </Typography>
+            I am a </Typography>
+            <Typography  sx={{ ml:{xs: 1, lg:2}, fontSize: {xs: "1.5rem", md:"2.5rem", lg: "3rem"}, fontWeight: 600, color: '#FFC900' }}> <Typewriter  onInit={(typewriter) => {typewriter.typeString('Junior Web Developer').pauseFor(1500).deleteAll().typeString('Historian').pauseFor(1500).deleteAll().typeString('Junior Web Developer.').start()}}/></Typography>
+          </Grid>
           <Link to="About Me" spy={true} smooth={true} offset={0} duration={500}><Button variant={'outlined'} size={'large'} buttonName={'About Me'}/></Link>
           <Grid container mt={3}>
             <Grid item mr={1}><a href='https://github.com/thomasmelchers' target="_blank" rel="noopener noreferrer" sx={{textDecoration: 'none'}}> <GitHubIcon color='primary'fontSize='large' sx={icon.root}/></a></Grid>
