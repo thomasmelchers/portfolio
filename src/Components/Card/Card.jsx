@@ -4,6 +4,7 @@ import {
   Card,
   CardContent,
   Typography,
+  Badge
 } from "@mui/material";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,6 +13,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 const style ={
   root:{
+    position: 'relative',
     height: {xs: '43vh' ,lg: '37vh'},
     '&:hover': {
       transform: 'scale(1.05)',
@@ -43,7 +45,8 @@ const CardWork = ({ data }) => {
       } = item;
       return (
         <Grid item xs={12} lg={2.75} key={id} m={1.5}>
-          <Card sx={style.root}>
+          <Card sx={style.root} >
+          {(status === 'In Progress') && <Typography /* color='#0A1A2E' */ color='tertiary' sx={{fontSize: '0.9rem', backgroundColor: 'secondary.main', borderRadius: 15, width: '30%', position: 'absolute', top: 7, right: 7, zIndex: 2, }}>{status}</Typography>}
             <a href={url} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
             <CardMedia
               component="img"
@@ -59,8 +62,6 @@ const CardWork = ({ data }) => {
                 <Grid item >
                 <Typography /* color='#0A1A2E' */ color='primary' sx={{fontSize: '0.9rem'}}>{technologies}</Typography>
                 <Typography /* color='#0A1A2E' */ color='primary'>{role}</Typography>
-                {(status === 'In Progress') && 
-                 <Typography /* color='#0A1A2E' */ color='secondary' sx={{fontSize: '0.5rem'}}>{status}</Typography>}
                 </Grid>
                 <Grid item >
                   <a href={github} target="_blank" rel="noopener noreferrer" sx={style.icon}> <GitHubIcon color='secondary'/></a>
