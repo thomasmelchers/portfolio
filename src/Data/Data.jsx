@@ -100,7 +100,7 @@ const Data = [
         github: 'https://github.com/becodeorg/Swartz-5-Client-Application-d-Immersion-Culturelle',
         url:'https://actyv.netlify.app/',
         role: 'Front-End',
-        status: 'In Progress'
+        status: 'Done'
     },
 ]
 
