@@ -14,6 +14,7 @@ const style = {
   root: {
     position: "relative",
     height: { xs: "43vh", lg: "37vh" },
+    transition: "0.2s",
     "&:hover": {
       transform: "scale(1.05)",
       cursor: "pointer",

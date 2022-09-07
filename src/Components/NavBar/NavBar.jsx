@@ -9,7 +9,7 @@ import Button from '../Button/Button'
 import {Links as LinkR} from 'react-router-dom'
 
 const Navbar = () => {
-    const pages = ["Home", "About Me", "Projects", "Contact"];
+    const pages = ["Home", "About Me", "Skills", "Projects", "Contact"];
 
   // HANDLING THE MENU MODAL
   const [open, setOpen] = useState(false)
@@ -49,6 +49,7 @@ const Navbar = () => {
                       /* fontFamily: "Fredoka", */
                       fontSize: "1.1rem",
                       fontWeight: "650",
+                      transition: "0.5s",
                       '&:hover':{
                         color: 'secondary.main',
                         transform: 'scale(1.2)',
