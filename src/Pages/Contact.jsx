@@ -68,7 +68,7 @@ const Contact = () => {
     >
       <Grid
         container
-        sx={{ height: {xs: '120vh', lg:"100vh"} }}
+        sx={{ height: {xs: '140vh', lg:"100vh"} }}
         px={"10%"} /* direction="column" */
       >
         <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "90vh", lg: "80vh"},/*  overflow: 'scroll' */ }}>
