@@ -15,7 +15,7 @@ const Experience = () => {
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
-        sx={{ height: {xs: '140vh', md: "100vh"} }}
+        sx={{ height: {xs: '180vh', md: "100vh"} }}
         px="10%" /* direction="column" */
       >
         <Grid
@@ -23,7 +23,7 @@ const Experience = () => {
           item
           mt="6vh"
           xs={12}
-          sx={{ height: {xs: "120vh", md: "85vh"} }}
+          sx={{ height: {xs: "160vh", md: "85vh"} }}
         >
           <Grid
             container
