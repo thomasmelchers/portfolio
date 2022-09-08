@@ -10,8 +10,8 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
     transform: "translate(-50%, -50%)",
     width: '50%',
     height: '50%',
-    bgcolor: "#CCD7F5",
-    border: "2px solid #FFC900",
+    bgcolor: "#1B467A",
+    /* border: "2px solid #FFC900" */
     borderRadius: 8,
     boxShadow: 24,
     p: 4,
@@ -43,7 +43,7 @@ const ModalMenuItem = ({ open, closeMenuItem, pages }) => {
       {pages.map((page) => (
           
           <Box key={page} style={{height: '20%', borderBottom: 'solid #FFC900'}} display='flex' justifyContent='center' alignItems='center'>
-              <Link to={page} spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} onClick={closeMenuItem}><Typography id="modal-modal-title" variant="h6" component="h2" textAlign='center' sx={{color:'#0A1A2E', fontWeight:'500', fontSize:'1.5rem'}}>
+              <Link to={page} spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} onClick={closeMenuItem}><Typography id="modal-modal-title" variant="h6" component="h2" textAlign='center' color='primary' sx={{ fontWeight:'500', fontSize:'1.5rem'}}>
               {page}
               </Typography></Link>
               </Box>
