@@ -9,7 +9,7 @@ import Button from '../Button/Button'
 import {Links as LinkR} from 'react-router-dom'
 
 const Navbar = () => {
-    const pages = ["Home", "About Me", "Skills", "Projects", "Contact"];
+    const pages = ["Home", "About Me", "Experience", "Projects", "Contact"];
 
   // HANDLING THE MENU MODAL
   const [open, setOpen] = useState(false)
