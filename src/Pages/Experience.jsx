@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import PageTitle from "../Components/PageTitle/PageTitle";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import Skills from "../Components/Skills/Skills";
