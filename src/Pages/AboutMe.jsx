@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import PageTitle from "../Components/PageTitle/PageTitle";
-import Skills from "../Components/Skills/Skills";
 import { Link } from "react-scroll";
 
 const AboutMe = () => {
@@ -34,7 +33,7 @@ const AboutMe = () => {
               >
                 Hello, my name is Thomas. I am a Junior Web Developer and a
                 Historian. After some experiences in the cultural and tourism
-                sector, I have decided to redirect my carrier through web
+                sector, I have decided to redirect my career through web
                 development. This interest started a few years ago when I
                 created several websites for an University NPO or to promote the
                 touristic activities of a friend. In April 2022, I completed a
@@ -55,23 +54,22 @@ const AboutMe = () => {
                 fontSize="1rem"
                 sx={{ display: { lg: "none", xs: "flex" } }}
               >
-                Hello, my name is Thomas. I enjoy creating web applications and
-                playing with data. This interest started a few years ago when I
-                still was a student. I created a website to promote the
-                activities of an NPO where I was involved. Later on, I created a
-                website for a travel guide to promote his activities.
+                Hello, my name is Thomas. I am a Junior Web Developer. I decided
+                to redirect my career through web development in September 2021.
+                I have completed a seven-month bootcamp at BeCode which promotes
+                a self-learning and active pedagogy and then a two-month
+                internship as a fullstack developer in a start-up.
               </Typography>
               <Typography
-                color="primary"
+                color="secondary"
+                fontWeight={550}
                 mt={3}
                 textAlign="justify"
-                fontSize="1.2rem"
-                sx={{ display: { xs: "none", lg: "flex" } }}
+                fontSize={{ xs: "1rem", md: "1.2rem" }}
               >
-                Today, I am looking for a new challenge where I can use my skills to help a company to develop its digital solution.
+                Today, I am looking for a new challenge where I can use my
+                skills to help a company to develop its digital solution.
               </Typography>
-              
-              
             </Grid>
             <Grid item xs={12} md={4}></Grid>
           </Grid>
