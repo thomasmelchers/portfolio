@@ -4,11 +4,10 @@ import {
   Card,
   CardContent,
   Typography,
-  Badge,
 } from "@mui/material";
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LaunchIcon from "@mui/icons-material/Launch";
+/* import LaunchIcon from "@mui/icons-material/Launch"; */
 
 const style = {
   root: {
@@ -39,7 +38,6 @@ const CardWork = ({ data }) => {
         technologies,
         github,
         url,
-        description,
         role,
         status,
       } = item;
