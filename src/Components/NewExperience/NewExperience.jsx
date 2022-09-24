@@ -6,7 +6,7 @@ const expStyle = {
     padding: '20px',
     borderRadius: "10px",
     backgroundColor: '#1B467A',
-    margin: {xs: '10px', md: '30px'},
+    margin: {xs: '10px', md:'12px', xl: '15px'},
     transition: '0.8s',
     '&:hover':{
         transform: 'translate(-10px, -10px)',
