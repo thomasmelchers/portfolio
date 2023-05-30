@@ -67,13 +67,13 @@ const Home = () => {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("Junior Web Developer")
+                    .typeString("Junior Developer")
                     .pauseFor(1500)
                     .deleteAll()
                     .typeString("Historian")
                     .pauseFor(1500)
                     .deleteAll()
-                    .typeString("Junior Web Developer.")
+                    .typeString("Junior Developer.")
                     .start();
                 }}
               />

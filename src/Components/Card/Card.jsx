@@ -17,6 +17,7 @@ const style = {
     "&:hover": {
       transform: "scale(1.05)",
       cursor: "pointer",
+      borderColor: "#FFC900"
     },
     border: "2px solid #CCD7F5",
     borderRadius: "8px",

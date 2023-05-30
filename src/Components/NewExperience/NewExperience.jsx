@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 const expStyle = {
-    width: {xs: "80%", md: "50%"},
+    width: {xs: "80%", md: "75%"},
     padding: '20px',
     borderRadius: "10px",
     backgroundColor: '#1B467A',
@@ -32,11 +32,11 @@ const expStyle = {
 
   }
 
-const NewExperience = ({title, description, time}) => {
+const NewExperience = ({title, description, location, time}) => {
   return (
     <Box sx={expStyle} >
         <Typography color='primary' sx={titleStyle}>{title}</Typography>
-        <Typography color='secondary' sx={timeStyle}>Brussels | {time}</Typography>
+        <Typography color='secondary' sx={timeStyle}> {location} | {time}</Typography>
         <Typography color='primary' sx={descriptionStyle}>{description}</Typography>
     </Box>
   )

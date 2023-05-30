@@ -1,21 +1,26 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
+import { Link } from "react-scroll";
 import PageTitle from "../Components/PageTitle/PageTitle";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import Skills from "../Components/Skills/Skills";
-import { Link } from "react-scroll";
 import NewExperience from "../Components/NewExperience/NewExperience";
+import { skillsData, experiencesData } from "../Data/Data" 
+
 
 const Experience = () => {
   const skillsGrid = {
     marginRight: { xs: "7px" },
   };
 
+  const reverseExperienceData = [...experiencesData].reverse()
+  console.table("reverse", reverseExperienceData)
+
   return (
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
-        sx={{ height: {xs: '180vh', md: "100vh"} }}
+        sx={{ height: { xs: "180vh", md: "100vh" } }}
         px="10%" /* direction="column" */
       >
         <Grid
@@ -23,13 +28,9 @@ const Experience = () => {
           item
           mt="6vh"
           xs={12}
-          sx={{ height: {xs: "160vh", md: "85vh"} }}
+          sx={{ height: { xs: "160vh", md: "85vh" } }}
         >
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-around"
-          >
+          <Grid container direction="column" justifyContent="space-around">
             <Grid item>
               <Grid container justifyContent="flex-start">
                 <PageTitle
@@ -39,31 +40,18 @@ const Experience = () => {
               </Grid>
             </Grid>
 
-            <Grid item >
-              <Grid container >
-                <Grid item xs={12} md={8} sx={{ marginBottom:{xs: '20px'}}}>
-                  <Grid container justifyContent="center" >
-                    <NewExperience
-                      title={"Becode"}
-                      time={"September 2021 to April 2022"}
-                      description={
-                        "A seven-month intensive bootcamp based on a self-learning and active pedagogy. There I have developed individual and team projects by following an agile methodology."
-                      }
-                    ></NewExperience>
-                    <NewExperience
-                      title={"Actyv"}
-                      time={"March to April 2022"}
-                      description={
-                        "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners. "
-                      }
-                    ></NewExperience>
-                    <NewExperience
-                      title={"Nutrinomics"}
-                      time={"May to June 2022"}
-                      description={
-                        "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases."
-                      }
-                    ></NewExperience>
+            <Grid item>
+              <Grid container>
+                <Grid item xs={12} md={8} sx={{ marginBottom: { xs: "20px" } }}>
+                  <Grid container justifyContent="center">
+                    {reverseExperienceData.map((exp, index) => (
+                      <NewExperience
+                      key={index}
+                      title={exp.title}
+                      location={exp.location}
+                      time={exp.period}
+                      description={exp.description} />
+                    ))}  
                   </Grid>
                 </Grid>
 
@@ -75,33 +63,11 @@ const Experience = () => {
                     alignItems="center"
                     sx={{ height: "100%" }}
                   >
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="HTML 5 & CSS 3" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="JAVASCRIPT (ES6)" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="TYPESCRIPT" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="REACT" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="SQL" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="GRAPHQL" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="NODE & EXPRESS.JS" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="PHP" />
-                    </Grid>
-                    <Grid item sx={skillsGrid}>
-                      <Skills skill="MONGDO DB" />
-                    </Grid>
+                    {skillsData.map((skills, index) => (
+                      <Grid item sx={skillsGrid} key={index}>
+                        <Skills skill={skills} />
+                      </Grid>
+                    ))}
                   </Grid>
                 </Grid>
               </Grid>
