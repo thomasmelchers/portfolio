@@ -6,7 +6,8 @@ import codeflix from "../assets/screenshots/codeflix.png";
 import friendlyBook from "../assets/screenshots/friendly-book.png";
 import greenCottage from "../assets/screenshots/greencottage.png";
 import wiki from "../assets/screenshots/wiki.png";
-import actyv from "..//assets/screenshots/actyv.png";
+import actyv from "../assets/screenshots/actyv.png";
+import taskPlanner from "../assets/screenshots/task-planner.png"
 
 export const skillsData = [
   "HTML5 & CSS3",
@@ -51,7 +52,7 @@ export const experiencesData = [
       position: "Technical Consultant",
       location: "Ghent & hybrid",
       period: "November 2023 to Current",
-      description: "",
+      description: "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implement new features in Java and Javascript for different costumers.",
   }
 ];
 
@@ -139,18 +140,18 @@ export const worksData = [
     role: "Front-End & Back-End",
     status: "In Progress",
   },
-  {
-    id: 8,
-    projectName: "Rick and Morty Wiki",
-    image: wiki,
-    technologies: "React",
-    description:
-      "I followed a tutorial to have a better comprehension of React hooks",
-    github: "https://github.com/thomasmelchers/wiki-rick-and-morty",
-    url: "https://wiki-rickandmorty.herokuapp.com/",
-    role: "Front-End",
-    status: "Done",
-  },
+  // {
+  //   id: 8,
+  //   projectName: "Rick and Morty Wiki",
+  //   image: wiki,
+  //   technologies: "React",
+  //   description:
+  //     "I followed a tutorial to have a better comprehension of React hooks",
+  //   github: "https://github.com/thomasmelchers/wiki-rick-and-morty",
+  //   url: "https://wiki-rickandmorty.herokuapp.com/",
+  //   role: "Front-End",
+  //   status: "Done",
+  // },
   {
     id: 9,
     projectName: "Actyv",
@@ -164,17 +165,18 @@ export const worksData = [
     role: "Front-End",
     status: "Done",
   },
-//   {
-//     id: 10,
-//     projectName: "Task Planner",
-//     technologies: "React, Typescript",
-//     description:
-//       "Project to practice building front-end application with typescript and react",
-//     github:
-//       "https://github.com/thomasmelchers/task-planner",
-//     url: "https://thomas-melchers-task-planner.netlify.app/",
-//     role: "Front-End",
-//   }, 
+  {
+    id: 10,
+    projectName: "Task Planner",
+    image: taskPlanner,
+    technologies: "React, Typescript",
+    description:
+      "Project to practice building front-end application with typescript and react",
+    github:
+      "https://github.com/thomasmelchers/task-planner",
+    url: "https://thomas-melchers-task-planner.netlify.app/",
+    role: "Front-End",
+  }, 
 //   {
 //     id: 11, 
 //     projectName: "Task Planner",
