@@ -14,21 +14,21 @@ const Experience = () => {
   };
 
   const reverseExperienceData = [...experiencesData].reverse()
-  console.table("reverse", reverseExperienceData)
+  
 
   return (
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
-        sx={{ height: { xs: "190vh", md: "130vh" }}}
-        px="10%" /* direction="column" */
+        sx={{ height: { xs: "240vh", md: "130vh" }}}
+        px="10%"
       >
         <Grid
           container
           item
           mt="6vh"
           xs={12}
-          sx={{ height: { xs: "170vh", md: "110vh" }}}
+          sx={{ height: { xs: "220vh", md: "110vh" }}}
         >
           <Grid container direction="column" justifyContent="space-around">
             <Grid item>
