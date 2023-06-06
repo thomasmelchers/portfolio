@@ -47,16 +47,13 @@ const Experience = () => {
                     {reverseExperienceData.map((exp, index) => (
                       <NewExperience
                       key={index}
-                      title={exp.title}
-                      location={exp.location}
-                      time={exp.period}
-                      description={exp.description} />
+                      experience={exp} />
                     ))}  
                   </Grid>
                 </Grid>
 
                 <Grid item xs={12} md={4}>
-                  <Grid
+                  {/* <Grid
                     container
                     direction={{ xs: "row", md: "column" }}
                     justifyContent="center"
@@ -68,7 +65,7 @@ const Experience = () => {
                         <Skills skill={skills} />
                       </Grid>
                     ))}
-                  </Grid>
+                  </Grid> */}
                 </Grid>
               </Grid>
             </Grid>
