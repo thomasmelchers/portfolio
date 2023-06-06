@@ -9,8 +9,8 @@ import wiki from "../assets/screenshots/wiki.png";
 import actyv from "../assets/screenshots/actyv.png";
 import taskPlanner from "../assets/screenshots/task-planner.png"
 import actyvLogo from "../assets/logos/actyv.png"
-import nutrinomicsLogo from "../assets/logos/nutrinomics.png"
-import becodeLogo from "../assets/logos/becode.png"
+import nutrinomicsLogo from "../assets/logos/nutrinomics.jpeg"
+import becodeLogo from "../assets/logos/becode.jpeg"
 import iptorLogo from "../assets/logos/iptor.png"
 
 
@@ -29,13 +29,14 @@ export const experiencesData = [
   {
     id: 1,
     title: "BeCode",
-    position: "Student",
+    position: "Developer",
     location: "Brussels",
     period: "September 2021 to April 2022",
     url: "https://becode.org/",
     logo: becodeLogo,
     description:
       "A seven-month intensive bootcamp based on a self-learning and active pedagogy. There I have developed individual and team projects by following an agile methodology.",
+    technologies: ["HTML5", "CSS", "JavaScript", "PHP", "Node JS", "React JS", "MongoDB", "Git"],
   },
   {
     id: 2, 
@@ -45,17 +46,19 @@ export const experiencesData = [
     period: "March to April 2022",
     url: "https://actyv.netlify.app/",
     logo: actyvLogo,
-    description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners."
+    description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners.",
+    technologies: ["React JS", "Contenfull", "Material UI", "Git"],
   },
   {
       id: 3, 
       title: "Nutrinomics",
-      position: "Developer",
+      position: "Fullstack Developer",
       location: "Brussels",
       period: "May to June 2022",
       url: "https://zestcancer.com/",
       logo: nutrinomicsLogo,
       description: "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases.",
+      technologies: ["TypeScript", "Angular", "Node JS", "MongoDB", "SASS", "Git"],
   },
   {
       id: 4,
@@ -66,6 +69,7 @@ export const experiencesData = [
       url: "https://iptor.com/",
       logo: iptorLogo,
       description: "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implement new features in Java and Javascript for different costumers.",
+      technologies: ["Java 8 & 11", "Maven", "React JS", "JavaScript", "SQL", "Git"],
   }
 ];
 
