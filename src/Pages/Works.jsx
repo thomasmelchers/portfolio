@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
-import { worksData } from "../Data/Data";
+import { projectsData } from "../Data/Data";
 import Card from "../Components/Card/Card";
 import PageTitle from "../Components/PageTitle/PageTitle";
 import {Link} from 'react-scroll'
@@ -35,7 +35,7 @@ const Works = ({id}) => {
 
             <Grid item>
               <Grid container justifyContent="center" alignItems="center">
-                <Card data={worksData} />
+                <Card data={projectsData} />
               </Grid>
             </Grid>
           </Grid>

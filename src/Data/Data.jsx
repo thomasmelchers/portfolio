@@ -8,6 +8,11 @@ import greenCottage from "../assets/screenshots/greencottage.png";
 import wiki from "../assets/screenshots/wiki.png";
 import actyv from "../assets/screenshots/actyv.png";
 import taskPlanner from "../assets/screenshots/task-planner.png"
+import actyvLogo from "../assets/logos/actyv.png"
+import nutrinomicsLogo from "../assets/logos/nutrinomics.png"
+import becodeLogo from "../assets/logos/becode.png"
+import iptorLogo from "../assets/logos/iptor.png"
+
 
 export const skillsData = [
   "HTML5 & CSS3",
@@ -27,6 +32,8 @@ export const experiencesData = [
     position: "Student",
     location: "Brussels",
     period: "September 2021 to April 2022",
+    url: "https://becode.org/",
+    logo: becodeLogo,
     description:
       "A seven-month intensive bootcamp based on a self-learning and active pedagogy. There I have developed individual and team projects by following an agile methodology.",
   },
@@ -36,6 +43,8 @@ export const experiencesData = [
     position: "Developer",
     location: "Brussels",
     period: "March to April 2022",
+    url: "https://actyv.netlify.app/",
+    logo: actyvLogo,
     description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners."
   },
   {
@@ -44,6 +53,8 @@ export const experiencesData = [
       position: "Developer",
       location: "Brussels",
       period: "May to June 2022",
+      url: "https://zestcancer.com/",
+      logo: nutrinomicsLogo,
       description: "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases.",
   },
   {
@@ -52,11 +63,13 @@ export const experiencesData = [
       position: "Technical Consultant",
       location: "Ghent & hybrid",
       period: "November 2023 to Current",
+      url: "https://iptor.com/",
+      logo: iptorLogo,
       description: "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implement new features in Java and Javascript for different costumers.",
   }
 ];
 
-export const worksData = [
+export const projectsData = [
   {
     id: 1,
     projectName: "Curry Paradise",
