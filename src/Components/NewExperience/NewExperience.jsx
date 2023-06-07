@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React, { useState } from "react";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import Technologies from "../Shared/Technologies/Technologies";
+
 
 const expStyle = {
   width: { xs: "80%", md: "75%" },
@@ -77,15 +78,7 @@ const NewExperience = ({ experience }) => {
                   >
                     {info}
                   </Typography>
-                  <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                  {technologies.map((techno, index) => (
-                    <Box key={index}  style={{display: 'flex', padding: "5px 15px 5px 5px", borderRadius: "5px", backgroundColor:"#FFC900", marginRight: "5px", marginTop: "10px"}}>
-                      <ChevronRightIcon sx={{color:"#0A1A2E"}} />
-                      <Typography color="#0A1A2E"> {techno}</Typography>
-                    </Box>
-                  ))}
-
-                  </div>
+                  <Technologies technologies={technologies}/>
                 </>
               ) : (
                 <Typography
