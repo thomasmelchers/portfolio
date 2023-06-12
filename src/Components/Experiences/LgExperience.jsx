@@ -10,10 +10,10 @@ const expStyle = {
   backgroundColor: "#1B467A",
   margin: { xs: "10px", md: "12px", xl: "15px" },
   transition: "all 0.8s ease-out",
-  "&:hover": { md: {
-    transform: "translate(-10px, -10px)",
-    boxShadow: "10px 5px 5px #FFC90080",
-  }},
+  // "&:hover": { md: {
+  //   transform: "translate(-10px, -10px)",
+  //   boxShadow: "10px 5px 5px #FFC90080",
+  // }},
 };
 
 const NewExperience = ({ experience }) => {
