@@ -8,6 +8,11 @@ import greenCottage from "../assets/screenshots/greencottage.png";
 import wiki from "../assets/screenshots/wiki.png";
 import actyv from "../assets/screenshots/actyv.png";
 import taskPlanner from "../assets/screenshots/task-planner.png"
+import actyvLogo from "../assets/logos/actyv.png"
+import nutrinomicsLogo from "../assets/logos/nutrinomics.jpeg"
+import becodeLogo from "../assets/logos/becode.jpeg"
+import iptorLogo from "../assets/logos/iptor.png"
+
 
 export const skillsData = [
   "HTML5 & CSS3",
@@ -24,11 +29,14 @@ export const experiencesData = [
   {
     id: 1,
     title: "BeCode",
-    position: "Student",
+    position: "Developer",
     location: "Brussels",
     period: "September 2021 to April 2022",
+    url: "https://becode.org/",
+    logo: becodeLogo,
     description:
       "A seven-month intensive bootcamp based on a self-learning and active pedagogy. There I have developed individual and team projects by following an agile methodology.",
+    technologies: ["HTML5", "CSS", "JavaScript", "PHP", "Node JS", "React JS", "MongoDB", "Git"],
   },
   {
     id: 2, 
@@ -36,15 +44,21 @@ export const experiencesData = [
     position: "Developer",
     location: "Brussels",
     period: "March to April 2022",
-    description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners."
+    url: "https://actyv.netlify.app/",
+    logo: actyvLogo,
+    description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners.",
+    technologies: ["React JS", "Contenfull", "Material UI", "Git"],
   },
   {
       id: 3, 
       title: "Nutrinomics",
-      position: "Developer",
+      position: "Fullstack Developer",
       location: "Brussels",
       period: "May to June 2022",
+      url: "https://zestcancer.com/",
+      logo: nutrinomicsLogo,
       description: "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases.",
+      technologies: ["TypeScript", "Angular", "Node JS", "MongoDB", "SASS", "Git"],
   },
   {
       id: 4,
@@ -52,11 +66,27 @@ export const experiencesData = [
       position: "Technical Consultant",
       location: "Ghent & hybrid",
       period: "November 2023 to Current",
+      url: "https://iptor.com/",
+      logo: iptorLogo,
       description: "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implement new features in Java and Javascript for different costumers.",
+      technologies: ["Java 8 & 11", "Maven", "React JS", "JavaScript", "SQL", "Git"],
   }
 ];
 
-export const worksData = [
+export const personnalProjectsData = [
+
+  {
+    role: "Developer, Project Manager",
+    tasks: "Front-End, Back-End",
+    period: "June 2022 to current",
+    technologies: ["Node.JS", "React JS", "TypeScript", "Java", "Spring", "MongoDB", "MySQL", "SQL", "Material UI", "TailwindCSS"],
+    intro: "I keep learning and practicing my knowledge by creating projects as a hobby after my working days.",
+    description: ["To practice TypeScript, I have created a 'Scrum Board' project where you can insert, modify and delete some tickets from the planning. I have also created some MERN stack projects with TypeScript and try to implement various fonctionalities.", "To practice Java, I have created several projects such as the logic of a RPG game to be familiar with heritage and interface concepts. I have also learned web services and now I create some API with MySQL, and I parse Excel files. I am also interested in new java technologies such as Spring which I presently study the bases."],
+  }
+]
+
+
+export const projectsData = [
   {
     id: 1,
     projectName: "Curry Paradise",
