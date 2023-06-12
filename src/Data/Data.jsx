@@ -13,18 +13,6 @@ import nutrinomicsLogo from "../assets/logos/nutrinomics.jpeg"
 import becodeLogo from "../assets/logos/becode.jpeg"
 import iptorLogo from "../assets/logos/iptor.png"
 
-
-export const skillsData = [
-  "HTML5 & CSS3",
-  "JavaScript",
-  "TypeScript",
-  "Java 1.8 & 11",
-  "React",
-  "Node JS",
-  "Mongo DB",
-  "Material UI",
-];
-
 export const experiencesData = [
   {
     id: 1,
@@ -47,7 +35,7 @@ export const experiencesData = [
     url: "https://actyv.netlify.app/",
     logo: actyvLogo,
     description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners.",
-    technologies: ["React JS", "Contenfull", "Material UI", "Git"],
+    technologies: ["React JS", "Contentful", "Material UI", "Git"],
   },
   {
       id: 3, 
@@ -79,7 +67,7 @@ export const personnalProjectsData = [
     role: "Developer, Project Manager",
     tasks: "Front-End, Back-End",
     period: "June 2022 to current",
-    technologies: ["Node.JS", "React JS", "TypeScript", "Java", "Spring", "MongoDB", "MySQL", "SQL", "Material UI", "TailwindCSS"],
+    technologies: ["Node.JS", "React JS", "TypeScript", "Java", "Spring", "MongoDB", "MySQL", "SQL", "Material UI", "TailwindCSS", "Git"],
     intro: "I keep learning and practicing my knowledge by creating projects as a hobby after my working days.",
     description: ["To practice TypeScript, I have created a 'Scrum Board' project where you can insert, modify and delete some tickets from the planning. I have also created some MERN stack projects with TypeScript and try to implement various fonctionalities.", "To practice Java, I have created several projects such as the logic of a RPG game to be familiar with heritage and interface concepts. I have also learned web services and now I create some API with MySQL, and I parse Excel files. I am also interested in new java technologies such as Spring which I presently study the bases."],
   }
