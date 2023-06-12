@@ -4,16 +4,16 @@ import Technologies from "../Shared/Technologies/Technologies";
 
 
 const expStyle = {
-  width: { xs: "80%", md: "75%" },
+  width: { xs: "80%" },
   padding: "20px",
   borderRadius: "10px",
   backgroundColor: "#1B467A",
   margin: { xs: "10px", md: "12px", xl: "15px" },
   transition: "all 0.8s ease-out",
-  "&:hover": {
+  "&:hover": { md: {
     transform: "translate(-10px, -10px)",
     boxShadow: "10px 5px 5px #FFC90080",
-  },
+  }},
 };
 
 const NewExperience = ({ experience }) => {
@@ -36,7 +36,7 @@ const NewExperience = ({ experience }) => {
         rel="noopener noreferrer"
         style={{ textDecoration: "none" }}
       >
-        <Box display="flex" sx={{ height: "12rem" }}>
+        <Box display="flex" sx={{ height: "auto", padding: "2rem" }}>
           <Box
             display="flex"
             alignItems="center"
@@ -65,16 +65,16 @@ const NewExperience = ({ experience }) => {
                     textTransform="uppercase"
                     fontSize="1.5rem"
                     fontWeight="600"
+                    transition="opacity 1s ease-out"
                     opacity={hovered ? 0 : 1}
-                    transition="opacity 0.8s ease-out"
                   >
                     {position}
                   </Typography>
                   <Typography
                     color="secondary"
                     marginBottom="10px"
+                    transition="opacity 1s ease-out"
                     opacity={hovered ? 0 : 1}
-                    transition="opacity 0.8s ease-out"
                   >
                     {info}
                   </Typography>
