@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+
 import { ThemeProvider } from '@emotion/react';
-import customTheme from './assets/customTheme';
+import customTheme from './Assets/customTheme';
+import './index.css';
 
 ReactDOM.render(
   <ThemeProvider theme={customTheme}>

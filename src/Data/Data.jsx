@@ -1,17 +1,17 @@
-import curryParadise from "../assets/screenshots/curry-paradise.png";
-//import cookieClicker from "../assets/screenshots/cookie-clicker.png";
-import dataVisualization from "../assets/screenshots/data-visualization.png";
-import dinoRPG from "../assets/screenshots/dino-rpg.png";
-import codeflix from "../assets/screenshots/codeflix.png";
-import friendlyBook from "../assets/screenshots/friendly-book.png";
-import greenCottage from "../assets/screenshots/greencottage.png";
-import wiki from "../assets/screenshots/wiki.png";
-import actyv from "../assets/screenshots/actyv.png";
-import taskPlanner from "../assets/screenshots/task-planner.png"
-import actyvLogo from "../assets/logos/actyv.png"
-import nutrinomicsLogo from "../assets/logos/nutrinomics.jpeg"
-import becodeLogo from "../assets/logos/becode.jpeg"
-import iptorLogo from "../assets/logos/iptor.png"
+import curryParadise from "../Assets/screenshots/curry-paradise.png";
+//import cookieClicker from "../Assets/screenshots/cookie-clicker.png";
+import dataVisualization from "../Assets/screenshots/data-visualization.png";
+import dinoRPG from "../Assets/screenshots/dino-rpg.png";
+import codeflix from "../Assets/screenshots/codeflix.png";
+import friendlyBook from "../Assets/screenshots/friendly-book.png";
+import greenCottage from "../Assets/screenshots/greencottage.png";
+import wiki from "../Assets/screenshots/wiki.png";
+import actyv from "../Assets/screenshots/actyv.png";
+import taskPlanner from "../Assets/screenshots/task-planner.png"
+import actyvLogo from "../Assets/logos/actyv.png"
+import nutrinomicsLogo from "../Assets/logos/nutrinomics.jpeg"
+import becodeLogo from "../Assets/logos/becode.jpeg"
+import iptorLogo from "../Assets/logos/iptor.png"
 
 export const experiencesData = [
   {
