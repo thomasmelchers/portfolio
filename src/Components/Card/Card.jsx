@@ -13,14 +13,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const style = {
   root: {
-    position: "relative",
-    height: { xs: "43vh", lg: "37vh" },
-    transition: "0.2s",
-    "&:hover": {
-      transform: "scale(1.05)",
-      cursor: "pointer",
-      borderColor: "#FFC900"
-    },
+    height: "50vh",
     border: "2px solid #CCD7F5",
     borderRadius: "8px",
   },
@@ -32,12 +25,11 @@ const style = {
 
 const CardWork = ({ data }) => {
 
-  const display = data && data?.map((item) => {
-      let { id, projectName, image, technologies, github, url, role, status } =
-        item;
+
+  const { id, projectName, image, technologies, github, url, role, status } = data
 
       return (
-        <Grid item xs={12} lg={2.75} key={id} m={1.5}>
+
           <Card sx={style.root}>
             {status === "In Progress" && (
               <Typography
@@ -47,7 +39,6 @@ const CardWork = ({ data }) => {
                   backgroundColor: "secondary.main",
                   borderRadius: 15,
                   width: "30%",
-                  position: "absolute",
                   top: 7,
                   right: 7,
                   zIndex: 2,
@@ -119,11 +110,11 @@ const CardWork = ({ data }) => {
               </CardContent>
             </a>
           </Card>
-        </Grid>
-      );
-    });
+
+      )
+    }
   
-  return <>{display}</>;
-};
+  // return <>{display}</>;
+
 
 export default CardWork;
