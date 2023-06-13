@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, Typography } from "@mui/material";
+
 import Technologies from '../Shared/Technologies/Technologies';
 
 const XsExperience = ({experience}) => {
@@ -33,7 +34,7 @@ const XsExperience = ({experience}) => {
           <img src={logo} alt={title} width={"225px"} height={"auto"} />
         </Grid>
 
-        <Grid item xs={8} flexDirection="column" justifyContent="center">
+        <Grid item xs={10} flexDirection="column" justifyContent="center">
           <Typography
             color="primary"
             sx={{
@@ -54,7 +55,7 @@ const XsExperience = ({experience}) => {
             {location} | {period}
           </Typography>
         </Grid>
-        <Grid item xs={8} mt={3}>
+        <Grid item xs={10} mt={3}>
           <Typography
             color="primary"
             sx={{ fontSize: "1rem", textAlign: "justify" }}
@@ -63,7 +64,7 @@ const XsExperience = ({experience}) => {
           </Typography>
         </Grid>
 
-        <Grid item xs={8} mt={3}>
+        <Grid item xs={10} mt={3}>
           <Technologies technologies={technologies} />
         </Grid>
       </Grid>

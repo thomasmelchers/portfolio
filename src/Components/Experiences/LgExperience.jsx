@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { Box, Typography } from "@mui/material";
+
 import Technologies from "../Shared/Technologies/Technologies";
 
 
