@@ -1,11 +1,15 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import Button from "../Components/Button/Button";
-import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import { Link } from "react-scroll";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import Typewriter from "typewriter-effect";
+
+import Button from "../Components/Button/Button";
+import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 
 const icon = {
   root: {
@@ -15,8 +19,11 @@ const icon = {
   },
 };
 
+
 const Home = () => {
+
   return (
+
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid container style={{ height: "100vh" }}>
         <Grid
@@ -138,6 +145,7 @@ const Home = () => {
         </Grid>
       </Grid>
     </Box>
+    
   );
 };
 

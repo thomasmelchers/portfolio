@@ -3,12 +3,14 @@ import { Grid, Typography } from "@mui/material";
 
 import Technologies from '../Shared/Technologies/Technologies';
 
+
 const XsExperience = ({experience}) => {
 
     const { title, location, period, description, position, logo, url, technologies } =
     experience;
     
   return (
+    
     <a
       href={url}
       target="_blank"
@@ -69,6 +71,7 @@ const XsExperience = ({experience}) => {
         </Grid>
       </Grid>
     </a>
+
   );
 }
 

@@ -1,16 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Box, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
-import ArrowUp from "../Components/ArrowUp/ArrowUp";
+import { Link } from 'react-scroll'
+
+import ArrowUp from "../Components/Shared/ArrowUp/ArrowUp";
 import Button from "../Components/Button/Button";
 import emailjs from "@emailjs/browser";
 import Validation from "../Components/ContactForm/Validation";
-import {Link} from 'react-scroll'
 
 
-const textcolor = {
-  root: {'&.MuiInput-input': {color : 'red'}}
-}
 const Contact = () => {
+ 
   const form = useRef();
 
   const [error, setError] = useState ({})
@@ -59,6 +58,7 @@ const Contact = () => {
   );
 
   return (
+    
     <Box
       component="form"
       ref={form}
@@ -69,7 +69,7 @@ const Contact = () => {
       <Grid
         container
         sx={{ height: {xs: '140vh', lg:"100vh"} }}
-        px={"10%"} /* direction="column" */
+        px={"10%"} 
       >
         <Grid container item mt={{xs: "10vh",md:"6vh"}} xs={12} sx={{ height: {xs: "90vh", lg: "80vh"},/*  overflow: 'scroll' */ }}>
           <Grid container justifyContent="center" alignItems="center">
@@ -281,6 +281,7 @@ const Contact = () => {
         </Grid>
       </Grid>
     </Box>
+    
   );
 };
 

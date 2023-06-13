@@ -1,23 +1,18 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
-import ArrowDown from "../Components/ArrowDown/ArrowDown";
-import { projectsData } from "../Data/Data";
-import Card from "../Components/Card/Card";
-import PageTitle from "../Components/PageTitle/PageTitle";
 import {Link} from 'react-scroll'
 
-const Works = ({id}) => {
-  /* const role = Data.map((x)=>x.role.find((item => {if(item === 'Back-End'){console.log(x.id)}})
-  )) */
+import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
+import Card from "../Components/Card/Card";
+import PageTitle from "../Components/Shared/PageTitle/PageTitle";
 
-  /* const techno = Data.map((x) =>
-    x.technologies.find((item) => {
-      if (item === "React") {
-        console.log(Data[x.id - 1]);
-      }
-    })
-  ); */
+import { projectsData } from "../Data/Data";
+
+
+const Works = () => {
+
   return (
+
     <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid container sx={{ height: "auto" }} px="10%">
         {/* {xs: '400vh',lg: "100vh"} */}
@@ -54,6 +49,7 @@ const Works = ({id}) => {
         </Grid>
       </Grid>
     </Box>
+    
   );
 };
 

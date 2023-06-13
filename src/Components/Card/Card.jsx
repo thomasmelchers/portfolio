@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Grid,
   CardMedia,
@@ -5,9 +6,10 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-import React from "react";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 /* import LaunchIcon from "@mui/icons-material/Launch"; */
+
 
 const style = {
   root: {
@@ -27,21 +29,13 @@ const style = {
   },
 };
 
-const CardWork = ({ data }) => {
-  let display;
 
-  if (data) {
-    display = data.map((item) => {
-      let {
-        id,
-        projectName,
-        image,
-        technologies,
-        github,
-        url,
-        role,
-        status,
-      } = item;
+const CardWork = ({ data }) => {
+
+  const display = data && data?.map((item) => {
+      let { id, projectName, image, technologies, github, url, role, status } =
+        item;
+
       return (
         <Grid item xs={12} lg={2.75} key={id} m={1.5}>
           <Card sx={style.root}>
@@ -128,7 +122,7 @@ const CardWork = ({ data }) => {
         </Grid>
       );
     });
-  }
+  
   return <>{display}</>;
 };
 

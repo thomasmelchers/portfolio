@@ -1,9 +1,12 @@
 import React from 'react'
 import { Box, Typography } from "@mui/material"
+
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 
 const Technologies = ({technologies}) => {
   return (
+
     <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: {xs: "center", lg: "start"} }}>
       {technologies.map((techno, index) => (
         <Box
@@ -21,6 +24,7 @@ const Technologies = ({technologies}) => {
         </Box>
       ))}
     </Box>
+    
   );
 }
 

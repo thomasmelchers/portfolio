@@ -3,7 +3,7 @@ import { Box, Grid } from "@mui/material";
 import { Link } from "react-scroll";
 
 import PageTitle from "../Components/PageTitle/PageTitle";
-import ArrowDown from "../Components/ArrowDown/ArrowDown";
+import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
 import LgExperience from "../Components/Experiences/LgExperience";
 import XsExperience from "../Components/Experiences/XsExperience";
 import PrivateExperience from "../Components/Experiences/PrivateExperience";
@@ -12,12 +12,11 @@ import { experiencesData,  } from "../Data/Data"
 
 
 const Experience = () => {
-  
 
   const reverseExperienceData = [...experiencesData].reverse()
   
-
   return (
+
     //{xs: "500vh", md: "250vh", lg: "160vh"}
     <Box sx={{ backgroundColor: "#0A1A2E", height: "auto" }}>
       <Grid container px="10%">
@@ -124,6 +123,7 @@ const Experience = () => {
         </Grid>
       </Grid>
     </Box>
+    
   );
 };
 

@@ -10,8 +10,8 @@ const PrivateExperience = () => {
 
     const { role, tasks, period, intro, description, technologies } = personnalProjectsData[0]
 
-
   return (
+
     <Grid container justifyContent="center">
       <Grid item xs={10}>
         <Typography
@@ -56,6 +56,7 @@ const PrivateExperience = () => {
         <Technologies technologies={technologies} />
       </Grid>
     </Grid>
+    
   );
 }
 

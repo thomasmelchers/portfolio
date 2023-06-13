@@ -17,7 +17,9 @@ const expStyle = {
   // }},
 };
 
+
 const NewExperience = ({ experience }) => {
+
   const [hovered, setHovered] = useState(false);
 
   const handleHover = () => {
@@ -97,6 +99,7 @@ const NewExperience = ({ experience }) => {
         </Box>
       </a>
     </Box>
+    
   );
 };
 

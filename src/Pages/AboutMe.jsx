@@ -1,12 +1,15 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import ArrowDown from "../Components/ArrowDown/ArrowDown";
-import PageTitle from "../Components/PageTitle/PageTitle";
 import { Link } from "react-scroll";
 
+import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
+import PageTitle from "../Components/Shared/PageTitle/PageTitle";
+
 const AboutMe = () => {
+
   return (
-    <Box style={{ backgroundColor: "#0A1A2E" }}>
+  
+  <Box style={{ backgroundColor: "#0A1A2E" }}>
       <Grid
         container
         style={{ height: "100vh" }}
@@ -94,6 +97,7 @@ const AboutMe = () => {
         </Grid>
       </Grid>
     </Box>
+
   );
 };
 
