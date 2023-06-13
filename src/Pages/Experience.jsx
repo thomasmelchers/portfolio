@@ -1,20 +1,21 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { Link } from "react-scroll";
+
 import PageTitle from "../Components/PageTitle/PageTitle";
 import ArrowDown from "../Components/ArrowDown/ArrowDown";
 import LgExperience from "../Components/Experiences/LgExperience";
 import XsExperience from "../Components/Experiences/XsExperience";
-import Technologies from "../Components/Shared/Technologies/Technologies";
-import { experiencesData, personnalProjectsData } from "../Data/Data" 
+import PrivateExperience from "../Components/Experiences/PrivateExperience";
 
+import { experiencesData,  } from "../Data/Data" 
 
 
 const Experience = () => {
   
 
   const reverseExperienceData = [...experiencesData].reverse()
-  const { role, tasks, period, intro, description, technologies } = personnalProjectsData[0]
+  
 
   return (
     //{xs: "500vh", md: "250vh", lg: "160vh"}
@@ -94,43 +95,7 @@ const Experience = () => {
                         padding: "2rem 1rem",
                       }}
                     >
-                      <Grid container justifyContent="center">
-                        <Grid item xs={8}>
-                          <Typography
-                            color="primary"
-                            sx={{
-                              textTransform: "uppercase",
-                              fontSize: "1.5rem",
-                              fontWeight: "600",
-                            }}
-                          >
-                            Private Projects
-                          </Typography>
-                          <Typography
-                            mt={1}
-                            color="primary"
-                            sx={{ fontSize: "1.5rem", fontWeight: 500 }}
-                          >
-                            {role}
-                          </Typography>
-                          <Typography color="primary" fontWeight={500}>
-                            {tasks}
-                          </Typography>
-                          <Typography color="secondary">{period}</Typography>
-                          <Typography
-                            mt={3}
-                            color="primary"
-                            sx={{ fontSize: "1rem", textAlign: "justify" }}
-                          >
-                            {intro}
-                          </Typography>
-                          {description.map((desc, index) => (<Typography key={index} color="primary"
-                            sx={{ fontSize: "1rem", textAlign: "justify", mt: 1 }}>{desc}</Typography>))}
-                        </Grid>
-                        <Grid item xs={8} mt={3}>
-                          <Technologies technologies={technologies} />
-                        </Grid>
-                      </Grid>
+                      <PrivateExperience />
                     </Grid>
                   </Grid>
                 </Grid>
