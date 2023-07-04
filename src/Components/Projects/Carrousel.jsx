@@ -47,6 +47,7 @@ const handleNext = () => {
     onSwipedRight: handleSwipeRight
   });
 
+  // CARROUSEL DISPLAY CARD
   const cardLeft = { transform: "translateX(-5%) scale(0.5)", transition: "500ms", opacity: 0.3, backgroundColor: "yellow", width: "20vw" }
   const cardRight = { transform: "translateX(5%) scale(0.5)", transition: "500ms", opacity: 0.3, backgroundColor: "white", width: "20vw" }
   return (
