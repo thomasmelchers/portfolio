@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import { Link } from "react-scroll";
 
-import PageTitle from "../Components/PageTitle/PageTitle";
+import PageTitle from "../Components/Shared/PageTitle/PageTitle";
 import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
 import LgExperience from "../Components/Experiences/LgExperience";
 import XsExperience from "../Components/Experiences/XsExperience";

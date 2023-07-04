@@ -5,19 +5,19 @@ import {Link} from 'react-scroll'
 import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
 
 import PageTitle from "../Components/Shared/PageTitle/PageTitle";
-import Carrousel from "../Components/Carrousel/Carrousel";
+import Carrousel from "../Components/Projects/Carrousel";
 
 
 const Works = () => {
 
   return (
     <Box style={{ backgroundColor: "#0A1A2E" }}>
-      <Grid container sx={{ height: "100vh" }} px="10%">
+      <Grid container sx={{ height: "100vh" }} >
         {/* {xs: '400vh',lg: "100vh"} */}
         <Grid container item mt="6vh" xs={12} sx={{ height: "auto" }}>
           {/* {xs: '380vh', lg: "85vh"} */}
           <Grid container direction="column">
-            <Grid item>
+            <Grid item px="10%"> 
               <Grid container justifyContent="flex-start">
                 <PageTitle
                   numberTitle={"03."}
@@ -26,7 +26,7 @@ const Works = () => {
               </Grid>
             </Grid>
 
-            <Grid item mt={3} sx={{ height: "90%" }}>
+            <Grid item mt={3} sx={{ height: {xs: "75%", md: "90%"} }} px="5%">
               <Carrousel />
             </Grid>
           </Grid>
