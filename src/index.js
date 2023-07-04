@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 
 import { ThemeProvider } from '@emotion/react';
-import customTheme from './Assets/customTheme';
+import customTheme from './Pictures/customTheme';
 import './index.css';
 
 ReactDOM.render(
