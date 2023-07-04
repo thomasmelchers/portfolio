@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Grid, Button } from "@mui/material"
+import { useSwipeable } from 'react-swipeable';
 
 import Card from "./Card";
 import ModalProjects from "./ModalProjects"
@@ -32,11 +33,24 @@ const handleNext = () => {
     return slideNb
   }
 
+  //SWIPEABLE
+  const handleSwipeLeft = () => {
+    handleNext();
+  };
+
+  const handleSwipeRight = () => {
+    handlePrev();
+  };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: handleSwipeLeft,
+    onSwipedRight: handleSwipeRight
+  });
 
   const cardLeft = { transform: "translateX(-5%) scale(0.5)", transition: "500ms", opacity: 0.3, backgroundColor: "yellow", width: "20vw" }
   const cardRight = { transform: "translateX(5%) scale(0.5)", transition: "500ms", opacity: 0.3, backgroundColor: "white", width: "20vw" }
   return (
-    <>
+    <div {...handlers}>
       <Grid container alignItem="center" sx={{ height: "100%" }}>
         <Grid
           container
@@ -76,7 +90,7 @@ const handleNext = () => {
         </Grid>
       </Grid>
       <ModalProjects isOpen={isOpen} setIsOpen={setIsOpen} data={projectsData[currentIndex]}/>
-    </>
+    </div>
   );
 }
 
