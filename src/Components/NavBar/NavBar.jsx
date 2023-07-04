@@ -4,9 +4,6 @@ import { AppBar, IconButton, Toolbar, Box, Typography, Tooltip } from "@mui/mate
 import MenuIcon from "@mui/icons-material/Menu";
 import {Link} from 'react-scroll'
 import ModalMenuItem from "./ModalMenuItem";
-import { borderBottom } from '@mui/system';
-import Button from '../Button/Button'
-import {Links as LinkR} from 'react-router-dom'
 
 const Navbar = () => {
     const pages = ["Home", "About Me", "Experience", "Projects", "Contact"];
