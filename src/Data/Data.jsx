@@ -8,10 +8,12 @@ import greenCottage from "../Pictures/screenshots/greencottage.png";
 import wiki from "../Pictures/screenshots/wiki.png";
 import actyv from "../Pictures/screenshots/actyv.png";
 import taskPlanner from "../Pictures/screenshots/task-planner.png"
+import wordle from "../Pictures/screenshots/wordle.png"
 import actyvLogo from "../Pictures/logos/actyv.png"
 import nutrinomicsLogo from "../Pictures/logos/nutrinomics.jpeg"
 import becodeLogo from "../Pictures/logos/becode.jpeg"
 import iptorLogo from "../Pictures/logos/iptor.png"
+
 
 export const experiencesData = [
   {
@@ -215,6 +217,18 @@ export const projectsData = [
       url: "",
       role: ["Developer"],
       tasks: ["Back-End"]
+    }, 
+    {
+      id: 12,
+      projectName: "Wordle",
+      technologies: ["React", "TypeScript"],
+      image: wordle,
+      description: "Creation of a Wordle game. You have 6 chances to guess a word of 5 characters. The game is created with React and TypeScript and allow me to practice these technologies and add a feature using the keydown event to detect when a key is pressed.",
+      url: "https://thomasmelchers.github.io/Wordle/",
+      github: "https://github.com/thomasmelchers/Wordle",
+      role: ["Developer", "Project Manager"],
+      tasks: ["Front-End"],
+      status: "Done"
     }
 ];
 
