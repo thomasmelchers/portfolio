@@ -24,15 +24,16 @@ const ModalProjects = ({isOpen, setIsOpen, data}) => {
           left: "50%",
           transform: "translate(-50%, -50%)",
           width: { xs: "100%", md: "75%" },
-          height: { xs: "100%", md: "75%" },
+          height: { xs: "auto", md: "75%" },
           bgcolor: "#0A1A2E",
           border: "2px solid #FFC900",
           borderRadius: "10px",
           boxShadow: 24,
+          overflow: {md: "scroll"},
           p: 2,
         }}
       >
-        <Grid container justifyContent="center" height="100%">
+        <Grid container justifyContent="center" height="auto" >
           <Grid item xs={12}>
             <Box
               display="flex"
@@ -65,7 +66,7 @@ const ModalProjects = ({isOpen, setIsOpen, data}) => {
                     display: "flex",
                     justifyContent: "center",
                     width: "80%",
-                    height: "30vh",
+                    height: {xs: "auto", md: "30vh"},
                   }}
                 >
                   <img
@@ -87,7 +88,7 @@ const ModalProjects = ({isOpen, setIsOpen, data}) => {
                     flexDirection: "column",
                     
                     width: "80%",
-                    height: { xs: "60vh", md: "40vh" },
+                    height: { xs: "auto", md: "40vh" },
                   }}
                 >
                   <div>

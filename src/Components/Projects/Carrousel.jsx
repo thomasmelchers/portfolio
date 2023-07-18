@@ -4,6 +4,9 @@ import { useSwipeable } from 'react-swipeable';
 
 import Card from "./Card";
 import ModalProjects from "./ModalProjects"
+import Navigation from "./Navigation"
+
+import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 
 import { projectsData } from "../../Data/Data";
 
@@ -12,6 +15,7 @@ const Carrousel = () => {
 const [currentIndex, setCurrentIndex] = useState(0)
 const [isOpen, setIsOpen] = useState(false)
 
+const totalSlides = projectsData.length
 const isLastSlide = currentIndex === projectsData.length -1
 const isFirstSlide = currentIndex === 0
 
@@ -61,7 +65,7 @@ const handleNext = () => {
           display={{ xs: "none", md: "flex" }}
           md={1}
         >
-          <Button onClick={handlePrev}>Prev</Button>
+          <Button onClick={handlePrev}><ArrowBackIosNewOutlinedIcon /></Button>
         </Grid>
 
 
@@ -87,7 +91,15 @@ const handleNext = () => {
           display={{ xs: "none", md: "flex" }}
           md={1}
         >
-          <Button onClick={handleNext}>Next</Button>
+          <Button onClick={handleNext}><ArrowBackIosNewOutlinedIcon sx={{transform: "rotate(180deg)"}}/></Button>
+        </Grid>
+
+        <Grid container alignItems="center" item xs={12} sx={{display: {xs: "flex", md: "none"}}}>
+            <Navigation 
+            totalSlides={totalSlides}
+            currentSlide={currentIndex}
+            onBulletClick={(slideIndex) => setCurrentIndex(slideIndex)}
+            />
         </Grid>
       </Grid>
       <ModalProjects isOpen={isOpen} setIsOpen={setIsOpen} data={projectsData[currentIndex]}/>
