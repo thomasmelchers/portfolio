@@ -7,7 +7,7 @@ const navigation = {
         listStyle: "none",
         display: "flex",
         justifyContent: "center",
-        marginTop: "1rem",
+        marginTop: "1.5rem",
         paddingInlineStart: 0,
     },
     bullet: {

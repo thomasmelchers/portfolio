@@ -94,7 +94,7 @@ const handleNext = () => {
           <Button onClick={handleNext}><ArrowBackIosNewOutlinedIcon sx={{transform: "rotate(180deg)"}}/></Button>
         </Grid>
 
-        <Grid container alignItems="center" item xs={12} sx={{display: {xs: "flex", md: "none"}}}>
+        <Grid container alignItems="center" item xs={12} >
             <Navigation 
             totalSlides={totalSlides}
             currentSlide={currentIndex}
