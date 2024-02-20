@@ -1,19 +1,19 @@
-import curryParadise from "../Pictures/screenshots/curry-paradise.png";
+import curryParadise from "../Pictures/screenshots/curry-paradise.png"
 //import cookieClicker from "../Pictures/screenshots/cookie-clicker.png";
-import dataVisualization from "../Pictures/screenshots/data-visualization.png";
-import dinoRPG from "../Pictures/screenshots/dino-rpg.png";
-import codeflix from "../Pictures/screenshots/codeflix.png";
-import friendlyBook from "../Pictures/screenshots/friendly-book.png";
-import greenCottage from "../Pictures/screenshots/greencottage.png";
-import wiki from "../Pictures/screenshots/wiki.png";
-import actyv from "../Pictures/screenshots/actyv.png";
+import dataVisualization from "../Pictures/screenshots/data-visualization.png"
+import dinoRPG from "../Pictures/screenshots/dino-rpg.png"
+import codeflix from "../Pictures/screenshots/codeflix.png"
+import friendlyBook from "../Pictures/screenshots/friendly-book.png"
+import greenCottage from "../Pictures/screenshots/greencottage.png"
+import wiki from "../Pictures/screenshots/wiki.png"
+import actyv from "../Pictures/screenshots/actyv.png"
 import taskPlanner from "../Pictures/screenshots/task-planner.png"
 import wordle from "../Pictures/screenshots/wordle.png"
 import actyvLogo from "../Pictures/logos/actyv.png"
 import nutrinomicsLogo from "../Pictures/logos/nutrinomics.jpeg"
 import becodeLogo from "../Pictures/logos/becode.jpeg"
 import iptorLogo from "../Pictures/logos/iptor.png"
-
+import tomflix from "../Pictures/screenshots/tomflix.png"
 
 export const experiencesData = [
   {
@@ -26,55 +26,96 @@ export const experiencesData = [
     logo: becodeLogo,
     description:
       "A seven-month intensive bootcamp based on a self-learning and active pedagogy. There I have developed individual and team projects by following an agile methodology.",
-    technologies: ["HTML5", "CSS", "JavaScript", "PHP", "Node JS", "React JS", "MongoDB", "Git"],
+    technologies: [
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "Node JS",
+      "React JS",
+      "MongoDB",
+      "Git",
+    ],
   },
   {
-    id: 2, 
+    id: 2,
     title: "Actyv",
     position: "Developer",
     location: "Brussels",
     period: "March to April 2022",
     url: "https://actyv.netlify.app/",
     logo: actyvLogo,
-    description: "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners.",
+    description:
+      "During the BeCode training in a team of four, we have completed our first client project. We have built a showcase website to present the purpose of a cultural immersion NPO and help the founder to find new partners.",
     technologies: ["React JS", "Contentful", "Material UI", "Git"],
   },
   {
-      id: 3, 
-      title: "Nutrinomics",
-      position: "Fullstack Developer",
-      location: "Brussels",
-      period: "May to June 2022",
-      url: "https://zestcancer.com/",
-      logo: nutrinomicsLogo,
-      description: "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases.",
-      technologies: ["TypeScript", "Angular", "Node JS", "MongoDB", "SASS", "Git"],
+    id: 3,
+    title: "Nutrinomics",
+    position: "Fullstack Developer",
+    location: "Brussels",
+    period: "May to June 2022",
+    url: "https://zestcancer.com/",
+    logo: nutrinomicsLogo,
+    description:
+      "A two-month internship as a fullstack developer in a healthcare technology start-up improving the quality of life and the nutritional status of patiens suffering of cancer and chronic diseases.",
+    technologies: [
+      "TypeScript",
+      "Angular",
+      "Node JS",
+      "MongoDB",
+      "SASS",
+      "Git",
+    ],
   },
   {
-      id: 4,
-      title: "Iptor",
-      position: "Technical Consultant",
-      location: "Ghent & hybrid",
-      period: "November 2023 to Current",
-      url: "https://iptor.com/",
-      logo: iptorLogo,
-      description: "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implement new features in Java and Javascript for different costumers.",
-      technologies: ["Java 8 & 11", "Maven", "React JS", "JavaScript", "SQL", "Git"],
-  }
-];
+    id: 4,
+    title: "Iptor",
+    position: "Technical Consultant",
+    location: "Ghent & hybrid",
+    period: "November 2022 to Novembre 2023",
+    url: "https://iptor.com/",
+    logo: iptorLogo,
+    description:
+      "As a technical consultant in an international leader of cloud-based ERP software solutions in Pharma, Publishing, Supply Chain and Timber sectors, I implemented new features in Java and Javascript for different costumers.",
+    technologies: [
+      "Java 8 & 11",
+      "Maven",
+      "React JS",
+      "JavaScript",
+      "SQL",
+      "Git",
+    ],
+  },
+]
 
 export const personnalProjectsData = [
-
   {
     role: "Developer, Project Manager",
     tasks: "Front-End, Back-End",
     period: "June 2022 to current",
-    technologies: ["Node.JS", "React JS", "TypeScript", "Java", "Spring", "MongoDB", "MySQL", "SQL", "Material UI", "TailwindCSS", "Git"],
-    intro: "I keep learning and practicing my knowledge by creating projects as a hobby after my working days.",
-    description: ["To practice TypeScript, I have created a 'Scrum Board' project where you can insert, modify and delete some tickets from the planning. I have also created some MERN stack projects with TypeScript and try to implement various fonctionalities.", "To practice Java, I have created several projects such as the logic of a RPG game to be familiar with heritage and interface concepts. I have also learned web services and now I create some API with MySQL, and I parse Excel files. I am also interested in new java technologies such as Spring which I presently study the bases."],
-  }
+    technologies: [
+      "Node.JS",
+      "React JS",
+      "TypeScript",
+      "Java",
+      "Spring",
+      "JUnit 5",
+      "Mockito",
+      "MongoDB",
+      "MySQL",
+      "SQL",
+      "Material UI",
+      "Git",
+    ],
+    intro:
+      "I keep learning and practicing my knowledge by creating projects as a hobby after my working days.",
+    description: [
+      "To practice TypeScript, I have created a 'Scrum Board' project where you can insert, modify and delete some tickets from the planning. I have also created some MERN stack projects with TypeScript and try to implement various fonctionalities.",
+      "To practice Java, I have created several projects such as the logic of a RPG game to be familiar with heritage and interface concepts. I have also learned web services and now I create some API with MySQL, and I parse Excel files. I am also interested in new java technologies such as Spring which I presently study the bases.",
+    ],
+  },
 ]
-
 
 export const projectsData = [
   {
@@ -127,45 +168,45 @@ export const projectsData = [
     status: "Done",
     tasks: ["Front-End"],
   },
-  {
-    id: 5,
-    projectName: "Codeflix",
-    image: codeflix,
-    technologies: ["HTML", "CSS", "PHP", "SQL", "Bootstrap"],
-    description:
-      "Codeflix is a platform where you can discover tutorials about coding. The purpose of this project was to create a dynamic website inspired by Netflix, Amazon or Disney +",
-    github: "https://github.com/thomasmelchers/codeflix",
-    url: "",
-    role: ["Project-Manager", "Developer", "Git Master"],
-    status: "Done",
-    tasks: ["Back-End"],
-  },
-  {
-    id: 6,
-    projectName: "FriendlyBook",
-    image: friendlyBook,
-    technologies: ["Node.JS", "Express", "MongoDB", "React"],
-    description:
-      "FriendlyBook is a social network platform directly that we created in a team of three during our training at BeCode. This app is our first MERN stack project for all of us. My two team-mates were focus on the front-end meanwhile I discovered Node.JS and MongoDB and I created all the Back-End layer. There are among the features an authentication system, a post creation linked to a user, the possibility of pictures upload, a profile page which can be edited, ...",
-    github: "https://github.com/thomasmelchers/BookFace",
-    url: "",
-    role: ["Developer"],
-    status: "Done",
-    tasks: ["Back-End"],
-  },
-  {
-    id: 7,
-    projectName: "Green Cottage",
-    image: greenCottage,
-    technologies: ["Node.JS", "Express", "MongoDB", "React"],
-    description:
-      "Green Cottage is an individual MERN stack project inspired of AirBnb. During this two-month project, I learned the base of React and Material UI and I created all the back-end layer. The application has an authentication system, a profile page, an accomodation registration, a map localisation with MapBox. Unfortunately, I didn't have time to finish all the project.",
-    github: "https://github.com/thomasmelchers/npProject",
-    url: "",
-    role: ["Project Leader", "Developer"],
-    status: "In Progress",
-    tasks: ["Front-End", "Back-End"],
-  },
+  // {
+  //   id: 5,
+  //   projectName: "Codeflix",
+  //   image: codeflix,
+  //   technologies: ["HTML", "CSS", "PHP", "SQL", "Bootstrap"],
+  //   description:
+  //     "Codeflix is a platform where you can discover tutorials about coding. The purpose of this project was to create a dynamic website inspired by Netflix, Amazon or Disney +",
+  //   github: "https://github.com/thomasmelchers/codeflix",
+  //   url: "",
+  //   role: ["Project-Manager", "Developer", "Git Master"],
+  //   status: "Done",
+  //   tasks: ["Back-End"],
+  // },
+  // {
+  //   id: 6,
+  //   projectName: "FriendlyBook",
+  //   image: friendlyBook,
+  //   technologies: ["Node.JS", "Express", "MongoDB", "React"],
+  //   description:
+  //     "FriendlyBook is a social network platform directly that we created in a team of three during our training at BeCode. This app is our first MERN stack project for all of us. My two team-mates were focus on the front-end meanwhile I discovered Node.JS and MongoDB and I created all the Back-End layer. There are among the features an authentication system, a post creation linked to a user, the possibility of pictures upload, a profile page which can be edited, ...",
+  //   github: "https://github.com/thomasmelchers/BookFace",
+  //   url: "",
+  //   role: ["Developer"],
+  //   status: "Done",
+  //   tasks: ["Back-End"],
+  // },
+  // {
+  //   id: 7,
+  //   projectName: "Green Cottage",
+  //   image: greenCottage,
+  //   technologies: ["Node.JS", "Express", "MongoDB", "React"],
+  //   description:
+  //     "Green Cottage is an individual MERN stack project inspired of AirBnb. During this two-month project, I learned the base of React and Material UI and I created all the back-end layer. The application has an authentication system, a profile page, an accomodation registration, a map localisation with MapBox. Unfortunately, I didn't have time to finish all the project.",
+  //   github: "https://github.com/thomasmelchers/npProject",
+  //   url: "",
+  //   role: ["Project Leader", "Developer"],
+  //   status: "In Progress",
+  //   tasks: ["Front-End", "Back-End"],
+  // },
   // {
   //   id: 8,
   //   projectName: "Rick and Morty Wiki",
@@ -205,30 +246,51 @@ export const projectsData = [
     tasks: ["Front-End"],
     status: "Done",
   },
-    {
-      id: 11,
-      projectName: "Fruits Shop API",
-      technologies: ["Java", "SQL", "MySQL"],
-      librairies: ["Jersey"],
-      description:
-        "This Java project is a simulation of shop's activities. The shop can purchase some products, track their stock and sell products. The shop can upload an Excel file with purchases data and then update their stock. The features present are CRUD system for the 3 tables, upload Excel file, creation of unique ID, several business logic, app architecture based on controller, BO, DAO.",
-      github:
-        "https://github.com/thomasmelchers/fruitShopApi",
-      url: "",
-      role: ["Developer"],
-      tasks: ["Back-End"]
-    }, 
-    {
-      id: 12,
-      projectName: "Wordle",
-      technologies: ["React", "TypeScript"],
-      image: wordle,
-      description: "Creation of a Wordle game. You have 6 chances to guess a word of 5 characters. The game is created with React and TypeScript and allow me to practice these technologies and add a feature using the keydown event to detect when a key is pressed.",
-      url: "https://thomasmelchers.github.io/Wordle/",
-      github: "https://github.com/thomasmelchers/Wordle",
-      role: ["Developer", "Project Manager"],
-      tasks: ["Front-End"],
-      status: "Done"
-    }
-];
-
+  // {
+  //   id: 11,
+  //   projectName: "Fruits Shop API",
+  //   technologies: ["Java", "SQL", "MySQL"],
+  //   librairies: ["Jersey"],
+  //   description:
+  //     "This Java project is a simulation of shop's activities. The shop can purchase some products, track their stock and sell products. The shop can upload an Excel file with purchases data and then update their stock. The features present are CRUD system for the 3 tables, upload Excel file, creation of unique ID, several business logic, app architecture based on controller, BO, DAO.",
+  //   github:
+  //     "https://github.com/thomasmelchers/fruitShopApi",
+  //   url: "",
+  //   role: ["Developer"],
+  //   tasks: ["Back-End"]
+  // },
+  {
+    id: 12,
+    projectName: "Wordle",
+    technologies: ["React", "TypeScript"],
+    image: wordle,
+    description:
+      "Creation of a Wordle game. You have 6 chances to guess a word of 5 characters. The game is created with React and TypeScript and allow me to practice these technologies and add a feature using the keydown event to detect when a key is pressed.",
+    url: "https://thomasmelchers.github.io/Wordle/",
+    github: "https://github.com/thomasmelchers/Wordle",
+    role: ["Developer", "Project Manager"],
+    tasks: ["Front-End"],
+    status: "Done",
+  },
+  {
+    id: 13,
+    projectName: "Tomflix",
+    technologies: [
+      "React",
+      "Express",
+      "MongoDB",
+      "Node JS",
+      "TypeScript",
+      "SCSS",
+      "Material UI",
+    ],
+    image: tomflix,
+    description:
+      "Creation of a movie application where to watch trailer of movies and tv-shows. The project includes several features such as access and refresh tokens, likes, favorite page, profile, search bar, TMDB Api, paging, infinite scroll, ...",
+    url: "https://tomflix.vercel.app/",
+    github: "https://github.com/thomasmelchers/moviesApp",
+    role: ["Developer", "Project Manager"],
+    tasks: ["Front-End", "Back-End"],
+    status: "In Progress",
+  },
+]

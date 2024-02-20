@@ -1,37 +1,46 @@
-import React from "react";
-import { Box, Grid } from "@mui/material";
-import {Link} from 'react-scroll'
+import React from "react"
+import { Box, Grid } from "@mui/material"
+import { Link } from "react-scroll"
 
-import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown";
+import ArrowDown from "../Components/Shared/ArrowDown/ArrowDown"
 
-import PageTitle from "../Components/Shared/PageTitle/PageTitle";
-import Carrousel from "../Components/Projects/Carrousel";
-
+import PageTitle from "../Components/Shared/PageTitle/PageTitle"
+import Carrousel from "../Components/Projects/Carrousel"
 
 const Works = () => {
-
   return (
     <Box style={{ backgroundColor: "#0A1A2E" }}>
-      <Grid container sx={{ height: "100vh" }} >
+      <Grid container sx={{ height: "100vh" }}>
         {/* {xs: '400vh',lg: "100vh"} */}
-        <Grid container item mt="6vh" xs={12} sx={{ height: "auto" }}>
-          {/* {xs: '380vh', lg: "85vh"} */}
-          <Grid container direction="column">
-            <Grid item px="10%"> 
-              <Grid container justifyContent="flex-start">
-                <PageTitle
-                  numberTitle={"03."}
-                  pageTitle={"Projects"}
-                ></PageTitle>
-              </Grid>
-            </Grid>
-
-            <Grid item mt={3} sx={{ height: {xs: "75%", md: "90%"} }} px="5%">
-              <Carrousel />
+        {/* <Grid container item mt="6vh" xs={12} sx={{ height: "auto" }}> */}
+        {/* {xs: '380vh', lg: "85vh"} */}
+        <Grid
+          container
+          flexDirection="column"
+          flexWrap="wrap"
+          // mt={"6vh"}
+          sx={{ width: "100%" }}
+        >
+          <Grid item px="10%" sx={{ width: "100%" }}>
+            <Grid container justifyContent="flex-start">
+              <PageTitle numberTitle={"03."} pageTitle={"Projects"}></PageTitle>
             </Grid>
           </Grid>
+
+          <Grid
+            item
+            mt={3}
+            sx={{
+              height: { xs: "75%", md: "90%" },
+              width: "100%",
+            }}
+            px="5%"
+          >
+            <Carrousel />
+          </Grid>
         </Grid>
-        {/* 
+      </Grid>
+      {/* 
         <Grid
           container
           justifyContent="center"
@@ -44,9 +53,9 @@ const Works = () => {
             <ArrowDown />
           </Link>
         </Grid> */}
-      </Grid>
+      {/* </Grid> */}
     </Box>
-  );
-};
+  )
+}
 
-export default Works;
+export default Works
